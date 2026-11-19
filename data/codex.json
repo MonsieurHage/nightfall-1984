@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "c001", "theme": "projet", "title": "Du besoin au prototype",
+      "text": "Une démarche de projet part toujours d'un besoin et d'une problématique, jamais d'une solution imposée. En 5e, les élèves suivent une planification donnée et réalisent un prototype constitué d'éléments, d'un assemblage et éventuellement d'un programme. Le BO n°9 du 29/02/2024 précise qu'intention, planification et produit final caractérisent un projet.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique » ; guide mai 2024, démarches pédagogiques"
+    },
+    {
+      "id": "c002", "theme": "projet", "title": "Cahier des charges et exigences",
+      "text": "Le cahier des charges recense les exigences, les contraintes et les critères de performance attendus. Il sert de référence pendant la conception, les essais et la validation du prototype. Le thème 2 du BO n°9 du 29/02/2024 rappelle que certaines contraintes proviennent de normes, de labels ou de certifications.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « L'OST dans son environnement » ; thème 3, « La gestion de projet technique »"
+    },
+    {
+      "id": "c003", "theme": "projet", "title": "Planifier les tâches",
+      "text": "Le diagramme de planification des tâches représente les tâches, leur durée et les contraintes entre elles. Il aide l'équipe à organiser la conception et la réalisation dans un temps donné. C'est une connaissance explicite du thème 3 du BO n°9 du 29/02/2024, déclinée en 5e, 4e et 3e.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique », connaissances"
+    },
+    {
+      "id": "c004", "theme": "projet", "title": "Revue de projet et équipe",
+      "text": "La revue de projet assure le suivi, la validation et l'argumentation des choix ; elle n'est pas un simple contrôle final. Le travail en équipe est privilégié, avec un partage des fonctionnalités à programmer planifié et piloté par l'enseignant. Ces attentes figurent dans le thème 3 du BO n°9 du 29/02/2024.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Concevoir, écrire, tester et mettre au point un programme »"
+    },
+    {
+      "id": "c005", "theme": "projet", "title": "Écoconception et cycle de vie",
+      "text": "L'écoconception réduit l'impact environnemental dès la conception, en considérant toutes les étapes du cycle de vie : extraction, traitement, fabrication, assemblage, utilisation, fin de vie et transport. Le guide de mai 2024 (§3.3) en fait un fil conducteur de l'enseignement. Le BO n°9 du 29/02/2024 demande aussi de raisonner avec les trois piliers du développement durable.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « L'écoconception » ; guide mai 2024 §3.3"
+    },
+    {
+      "id": "c006", "theme": "energie", "title": "Lire une chaîne d'énergie",
+      "text": "Une chaîne d'énergie se lit comme une suite de constituants : source, transfert, conversion puis utilisation. À chaque étape, on identifie la forme d'énergie en entrée et en sortie. Le BO n°9 du 29/02/2024 (thème 2) attend cette analyse dès la 4e et un schéma bloc en 3e.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Fonctions, solutions, constituants de la chaîne d'énergie »"
+    },
+    {
+      "id": "c007", "theme": "energie", "title": "Formes et conversions",
+      "text": "Le programme retient les formes électrique, cinétique, potentielle, thermique et lumineuse. Un moteur électrique convertit l'énergie électrique en énergie mécanique, une lampe convertit l'énergie électrique en énergie lumineuse et thermique, un radiateur en énergie thermique. Ces conversions sont des connaissances du thème 2 du BO n°9 du 29/02/2024.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions d'énergie"
+    },
+    {
+      "id": "c008", "theme": "energie", "title": "Puissance et rendement",
+      "text": "La puissance se calcule par P = E/t, avec l'énergie en joules et le temps en secondes. Le rendement compare l'énergie (ou la puissance) utile à l'énergie (ou la puissance) fournie ; il est toujours inférieur à 1 car une partie de l'énergie est transférée sous une forme non utile. Le BO n°9 du 29/02/2024 et le guide de mai 2024 (§3.3) font de l'efficacité énergétique un critère de choix.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; guide mai 2024 §3.3"
+    },
+    {
+      "id": "c009", "theme": "energie", "title": "Choisir une source d'énergie",
+      "text": "Choisir une source d'énergie, c'est comparer sa disponibilité, son caractère renouvelable ou non et les incidences de son cycle de vie. En 4e, l'élève compare plusieurs sources ; en 3e, il arrête un choix pour un OST. Le BO n°9 du 29/02/2024 (thème 3) et le guide de mai 2024 (§3.3) structurent ce raisonnement.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie »"
+    },
+    {
+      "id": "c010", "theme": "energie", "title": "Batterie, relais et interrupteur",
+      "text": "La batterie stocke l'énergie et la fournit sous forme électrique. Le relais ou l'interrupteur commande l'ouverture et la fermeture du circuit, donc le passage de l'énergie. Le BO n°9 du 29/02/2024 (thème 2) donne explicitement ces fonctions à connaître.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : fonctions de la batterie et du relais/interrupteur"
+    },
+    {
+      "id": "c011", "theme": "information", "title": "Capteurs, microcontrôleur, actionneurs",
+      "text": "Le capteur acquiert une grandeur physique et la transforme en donnée ; le microcontrôleur traite les données selon le programme ; l'actionneur agit sur l'environnement. Boutons et afficheurs forment l'interface humain-machine (IHM). Le BO n°9 du 29/02/2024 (thème 2) définit ces constituants de la chaîne d'information.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Fonctions, solutions, constituants de la chaîne d'information »"
+    },
+    {
+      "id": "c012", "theme": "information", "title": "Bits, octets et types de données",
+      "text": "Le bit est l'élément minimal d'information (0 ou 1) et l'octet vaut 8 bits. Les données sont décrites par des descripteurs et des types : mot ou chaîne, nombre, booléen. Le BO n°9 du 29/02/2024 attend ce vocabulaire au thème 2 et les unités d'information au thème 1.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Structuration et traitement des données » ; thème 1, unités d'information"
+    },
+    {
+      "id": "c013", "theme": "information", "title": "Condition et événement",
+      "text": "Une instruction conditionnelle exécute une séquence seulement si une condition est vraie, sinon une autre séquence. Un événement, comme l'appui sur un bouton ou le franchissement d'un seuil, déclenche une séquence d'instructions. Ces concepts sont des connaissances de programmation du BO n°9 du 29/02/2024 (thème 2).",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Algorithmique et programmation »"
+    },
+    {
+      "id": "c014", "theme": "information", "title": "Le réseau local",
+      "text": "Dans un réseau local, les terminaux sont reliés par des liaisons filaires ou WiFi et par un commutateur. Chaque terminal possède une carte réseau et une adresse IP qui permet de l'identifier pour communiquer. Le BO n°9 du 29/02/2024 (thème 2) place ces contenus en classe de 4e.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « La circulation de l'information dans un réseau informatique » (4e)"
+    },
+    {
+      "id": "c015", "theme": "information", "title": "Routeur et circulation sur Internet",
+      "text": "Pour relier plusieurs réseaux, un routeur utilise des tables de routage : c'est le protocole de routage qui permet à l'information de circuler sur Internet. En 3e, l'élève doit identifier et représenter cette circulation, éventuellement à l'aide d'une simulation. Le BO n°9 du 29/02/2024 (thème 2) prévoit aussi des activités débranchées avec table de routage donnée.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 3e : circulation de l'information dans Internet"
+    },
+    {
+      "id": "c016", "theme": "materiaux", "title": "Propriétés des matériaux",
+      "text": "Le choix d'un matériau dépend de ses propriétés : conductibilité électrique, conductibilité thermique, dureté, transparence, masse volumique. Le BO n°9 du 29/02/2024 (thème 2 et thème 3) demande de justifier ce choix au regard des contraintes techniques et environnementales.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Matériaux et procédés » ; thème 3, « Le choix des matériaux »"
+    },
+    {
+      "id": "c017", "theme": "materiaux", "title": "Flexion et torsion",
+      "text": "Une pièce peut être sollicitée en flexion lorsqu'elle ploie sous une charge, ou en torsion lorsqu'elle est tordue. Connaître ces modes de sollicitation permet de choisir une forme et un matériau adaptés puis de valider la tenue mécanique par un essai. Le BO n°9 du 29/02/2024 les cite au thème 2 et au thème 3.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, modes de sollicitation ; thème 3, validation mécanique"
+    },
+    {
+      "id": "c018", "theme": "materiaux", "title": "Procédés de réalisation",
+      "text": "La fabrication additive ajoute de la matière couche par couche (imprimante 3D), tandis que l'usinage enlève de la matière. Le pliage et le thermoformage sont des procédés de mise en forme ; collage, soudage, rivetage et vissage sont des assemblages. Le BO n°9 du 29/02/2024 (thème 2) attend cette distinction.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Le dépannage et la réparation », connaissances : procédés et moyens de production"
+    },
+    {
+      "id": "c019", "theme": "materiaux", "title": "Assemblage et réparabilité",
+      "text": "Un assemblage démontable, comme le vissage, facilite le remplacement d'une pièce et améliore la réparabilité. Un assemblage définitif, comme le collage, rend la réparation plus difficile. Le BO n°9 du 29/02/2024 relie ces notions à l'indice de réparabilité (thème 1) et aux procédés d'assemblage (thème 2).",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, indice de réparabilité ; thème 2, assemblages"
+    },
+    {
+      "id": "c020", "theme": "materiaux", "title": "Cycle de vie et empreinte carbone",
+      "text": "Extraire, traiter, fabriquer, assembler, utiliser, transporter puis éliminer : chaque étape a une incidence environnementale. Disponibilité, valorisation, recyclage et empreinte carbone sont des critères du choix critérié. Le BO n°9 du 29/02/2024 (thème 2 et thème 3) demande de raisonner sur l'ensemble du cycle de vie.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, étapes du cycle de vie ; thème 3, « Le choix des matériaux »"
+    },
+    {
+      "id": "c021", "theme": "mecanique", "title": "Transmettre un mouvement",
+      "text": "Engrenages, courroies et chaînes transmettent un mouvement entre axes. Le rapport du nombre de dents ou de diamètres modifie la vitesse et le couple : un petit pignon entraînant une grande roue réduit la vitesse. Le BO n°9 du 29/02/2024 (thème 2) donne ces mécanismes comme connaissances.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : mécanismes de transmission de mouvements"
+    },
+    {
+      "id": "c022", "theme": "mecanique", "title": "Transformer un mouvement",
+      "text": "Une transformation de mouvement change la nature du mouvement, par exemple rotation en va-et-vient avec une bielle-manivelle, ou rotation en translation avec un vérin. Le BO n°9 du 29/02/2024 (thème 2) demande explicitement de distinguer transmission et transformation dans l'analyse des mouvements mécaniques.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, compétence : analyser les mouvements mécaniques"
+    },
+    {
+      "id": "c023", "theme": "mecanique", "title": "Un protocole de dépannage",
+      "text": "Dépanner consiste à observer, repérer la pièce ou la fonction défectueuse, formuler une hypothèse, tester, remplacer ou réparer, puis valider. Le BO n°9 du 29/02/2024 (thème 2) attend cette progression : détecter, analyser, proposer une solution, réparer, tester et valider l'amélioration.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement d'un objet technique et y remédier »"
+    },
+    {
+      "id": "c024", "theme": "mecanique", "title": "Mesurer une performance mécanique",
+      "text": "Vitesse de rotation, temps de fonctionnement ou force sont des grandeurs mesurables qui caractérisent la performance d'un OST. On choisit l'appareil de mesure adapté puis on compare le résultat à l'exigence du cahier des charges. Le BO n°9 du 29/02/2024 (thème 1) structure cette approche avec les mathématiques et la physique-chimie.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST »"
+    },
+    {
+      "id": "c025", "theme": "mecanique", "title": "Sécurité et outils de l'atelier",
+      "text": "Outillage manuel, découpe au laser, centre d'usinage et imprimante 3D nécessitent le respect des consignes et des équipements de protection individuelle. Une réparation réussie ne dispense jamais d'un test final de validation. Le BO n°9 du 29/02/2024 (thème 2 et thème 3) impose ces règles usuelles de sécurité.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2 et thème 3, règles usuelles de sécurité et moyens de production"
+    },
+    {
+      "id": "c026", "theme": "fluides", "title": "Le vérin, un convertisseur",
+      "text": "Un vérin transforme l'énergie de pression d'un fluide en mouvement mécanique. Il s'insère dans une chaîne d'énergie comme constituant de conversion, au même titre que le moteur électrique. Le BO n°9 du 29/02/2024 (thème 2) cite le vérin dans les conversions à connaître.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions d'énergie (vérin)"
+    },
+    {
+      "id": "c027", "theme": "fluides", "title": "Pression et énergie potentielle",
+      "text": "Un fluide comprimé possède une énergie potentielle de pression qu'il peut restituer sous forme de mouvement. L'air comprimé est utilisé en pneumatique, l'huile sous pression en hydraulique. Le BO n°9 du 29/02/2024 (thème 2) demande d'identifier sources et formes d'énergie dans une chaîne.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : formes d'énergie"
+    },
+    {
+      "id": "c028", "theme": "fluides", "title": "Débit et pression, grandeurs mesurables",
+      "text": "Le débit exprime un volume de fluide par unité de temps ; la pression se mesure en pascal ou en bar. Ce sont des grandeurs adaptées pour caractériser la performance d'une pompe ou d'un circuit. Le BO n°9 du 29/02/2024 (thème 1 et thème 2) demande de choisir des grandeurs et appareils de mesure pertinents.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; thème 2, débit"
+    },
+    {
+      "id": "c029", "theme": "fluides", "title": "Fuite et baisse de performance",
+      "text": "Une fuite diminue la pression disponible et donc la force développée par le vérin, tout en augmentant la consommation. C'est un dysfonctionnement à détecter puis à analyser avant d'y remédier. Le BO n°9 du 29/02/2024 (thème 2) attend cette démarche de dépannage et de validation des améliorations.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »"
+    },
+    {
+      "id": "c030", "theme": "fluides", "title": "Rendement d'un ensemble compresseur-vérin",
+      "text": "Si un compresseur consomme 1000 W et qu'un vérin fournit 300 W utiles, le rendement global vaut 300/1000 = 30 %. Les pertes correspondent surtout à des transferts thermiques et à des fuites. Le BO n°9 du 29/02/2024 et le guide de mai 2024 (§3.3) font du rendement un critère d'efficacité énergétique.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3"
+    },
+    {
+      "id": "c031", "theme": "securite", "title": "Sécurité physique à l'atelier",
+      "text": "Lunettes, gants adaptés et consignes de manipulation font partie des équipements et règles usuels de l'atelier de fabrication collaboratif. En cas d'alerte, on arrête l'activité, on prévient et on évacue selon la consigne. Le BO n°9 du 29/02/2024 (thème 2 et thème 3) attend une culture de prévention et de sécurité.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, règles usuelles de sécurité ; thème 3, prototypage"
+    },
+    {
+      "id": "c032", "theme": "securite", "title": "Identité et mots de passe",
+      "text": "Un mot de passe fort est long, unique et difficile à deviner ; la gestion des multiples mots de passe est également recommandée. L'identification déclare une identité, l'authentification la vérifie. Le BO n°9 du 29/02/2024 (thème 1) et le guide de mai 2024 (§7.2) traitent ces bases de la cybersécurité.",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « Cybersécurité » ; guide mai 2024 §7.2"
+    },
+    {
+      "id": "c033", "theme": "securite", "title": "Phishing et messagerie",
+      "text": "Un courriel qui demande des identifiants en urgence doit alerter : on vérifie l'expéditeur et on ne communique jamais son mot de passe. Une pièce jointe inattendue ne s'ouvre pas sans vérification de la source. Le guide de mai 2024 (§7.2) demande de reconnaître les techniques de phishing et de sécuriser sa messagerie, en lien avec le BO n°9 du 29/02/2024.",
+      "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, phishing et courriels indésirables ; BO n°9 du 29/02/2024, thème 1"
+    },
+    {
+      "id": "c034", "theme": "securite", "title": "Traces, géolocalisation et vie privée",
+      "text": "Témoins de connexion, géolocalisation et données personnelles constituent des traces numériques. Chacun est responsable de leur protection et doit connaître les risques d'usurpation d'identité ou de cyberviolence. Le BO n°9 du 29/02/2024 (thème 1) place ces notions au cœur des « Usages et impacts sociétaux du numérique ».",
+      "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, traces numériques, cyberviolence et protection des données"
+    },
+    {
+      "id": "c035", "theme": "securite", "title": "Sauvegarde, chiffrement et droits",
+      "text": "Faire des sauvegardes régulières et chiffrer un fichier avant de l'envoyer protège la confidentialité des données. Respecter la propriété intellectuelle, c'est utiliser une ressource sous licence compatible et citer sa source. Ces bonnes pratiques sont préconisées par le guide de mai 2024 (§7.2) et par le BO n°9 du 29/02/2024 (thème 1).",
+      "bo_ref": "Guide d'accompagnement mai 2024 — §7.2 ; BO n°9 du 29/02/2024 — Thème 1, propriété intellectuelle"
+    }
+  ]
+}

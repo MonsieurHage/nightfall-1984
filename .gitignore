@@ -1,0 +1,16 @@
+# Godot 4 — caches/imports locaux (régénérés à l'ouverture du projet)
+.godot/
+*.translation
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Sauvegardes / exports locales
+user://
+*.log
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "missions": [
+    {
+      "id": "alley",
+      "name": "01 // RUE 1984 — PREMIERS SIGNAUX",
+      "level_scene": "alley",
+      "brief": "Los Angeles, 12 juin 1984. Un messager traverse un quartier industriel sous la pluie. Récupérez les fragments de mémoire éparpillés, interrogez les bornes de diagnostic puis rejoignez l'extraction.",
+      "objectives": [
+        {"id": "chips", "type": "collect", "target": 3, "label": "Fragments mémoire récupérés", "score": 300},
+        {"id": "quiz", "type": "quiz", "target": 2, "label": " bornes pédagogiques validées", "score": 350},
+        {"id": "extraction", "type": "exit", "target": 1, "label": "Balise d'extraction atteinte", "score": 400}
+      ],
+      "quiz_themes": ["projet", "energie"],
+      "unlocks": "factory",
+      "reward_score": 800,
+      "reward_xp": 100
+    },
+    {
+      "id": "factory",
+      "name": "02 // USINE CYBERTECH — LIGNE DE PRODUCTION",
+      "level_scene": "factory",
+      "brief": "L'usine assemble des unités d'infiltration. Sabotez les consoles de production, détruisez les sentinelles et trouvez la carte d'accès au réseau souterrain.",
+      "objectives": [
+        {"id": "consoles", "type": "hack", "target": 3, "label": "Consoles de production sabotées", "score": 450},
+        {"id": "kills", "type": "kill", "target": 4, "label": "Sentinelles neutralisées", "score": 400},
+        {"id": "keycard", "type": "collect", "target": 1, "label": "Carte d'accès récupérée", "score": 250},
+        {"id": "extraction", "type": "exit", "target": 1, "label": "Sortie de l'usine atteinte", "score": 400}
+      ],
+      "quiz_themes": ["materiaux", "mecanique"],
+      "unlocks": "vents",
+      "reward_score": 1000,
+      "reward_xp": 140
+    },
+    {
+      "id": "vents",
+      "name": "03 // CONDUITS — RÉSEAU INFILTRÉ",
+      "level_scene": "vents",
+      "brief": "Les conduits de ventilation mènent au cœur du réseau. Rampez sous les grilles, piratez les caméras et rétablissez le courant pour ouvrir la salle serveur.",
+      "objectives": [
+        {"id": "cameras", "type": "hack", "target": 3, "label": "Caméras de surveillance piratées", "score": 450},
+        {"id": "fuse", "type": "collect", "target": 1, "label": "Fusible de puissance récupéré", "score": 250},
+        {"id": "quiz", "type": "quiz", "target": 3, "label": "Questions de sécurité validées", "score": 450},
+        {"id": "extraction", "type": "exit", "target": 1, "label": "Accès salle serveur ouvert", "score": 400}
+      ],
+      "quiz_themes": ["information", "securite"],
+      "unlocks": "plant",
+      "reward_score": 1200,
+      "reward_xp": 170
+    },
+    {
+      "id": "plant",
+      "name": "04 // CENTRALE — SURCHARGE ÉNERGÉTIQUE",
+      "level_scene": "plant",
+      "brief": "La centrale alimente le noyau. Activez les trois disjoncteurs dans le bon ordre en respectant la chaîne énergétique, esquivez les jets de vapeur et récupérez les batteries.",
+      "objectives": [
+        {"id": "breakers", "type": "hack", "target": 3, "label": "Disjoncteurs activés dans l'ordre", "score": 600},
+        {"id": "batteries", "type": "collect", "target": 2, "label": "Batteries de secours récupérées", "score": 350},
+        {"id": "quiz", "type": "quiz", "target": 2, "label": "Questions énergie validées", "score": 350},
+        {"id": "extraction", "type": "exit", "target": 1, "label": "Porte du noyau atteinte", "score": 500}
+      ],
+      "quiz_themes": ["energie", "fluides"],
+      "unlocks": "core",
+      "reward_score": 1400,
+      "reward_xp": 200
+    },
+    {
+      "id": "core",
+      "name": "05 // NOYAU SKYNET — CONFRONTATION FINALE",
+      "level_scene": "core",
+      "brief": "Le Gardien protège le noyau. Son bouclier est alimenté par trois terminaux : répondez correctement pour l'affaiblir, puis détruisez son point faible avant la surcharge finale.",
+      "objectives": [
+        {"id": "terminals", "type": "hack", "target": 3, "label": "Terminaux du bouclier désactivés", "score": 700},
+        {"id": "boss", "type": "kill", "target": 1, "label": "Gardien détruit", "score": 1500},
+        {"id": "extraction", "type": "exit", "target": 1, "label": "Noyau neutralisé — extraction", "score": 800}
+      ],
+      "quiz_themes": ["projet", "energie", "information", "materiaux", "mecanique", "fluides", "securite"],
+      "unlocks": "",
+      "reward_score": 2500,
+      "reward_xp": 350
+    }
+  ]
+}

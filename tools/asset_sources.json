@@ -1,0 +1,61 @@
+{
+  "asphalt": {
+    "source": "https://polyhaven.com/a/asphalt_01",
+    "asset": "asphalt_01",
+    "channels": {
+      "asphalt_diffuse.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\asphalt_diffuse.jpg",
+      "asphalt_normal.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\asphalt_normal.jpg",
+      "asphalt_rough.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\asphalt_rough.jpg",
+      "asphalt_ao.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\asphalt_ao.jpg"
+    }
+  },
+  "concrete": {
+    "source": "https://polyhaven.com/a/concrete_floor_01",
+    "asset": "concrete_floor_01",
+    "channels": {
+      "concrete_diffuse.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\concrete_diffuse.jpg",
+      "concrete_normal.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\concrete_normal.jpg",
+      "concrete_rough.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\concrete_rough.jpg",
+      "concrete_ao.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\concrete_ao.jpg"
+    }
+  },
+  "metal": {
+    "source": "https://polyhaven.com/a/metal_plate",
+    "asset": "metal_plate",
+    "channels": {
+      "metal_diffuse.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\metal_diffuse.jpg",
+      "metal_normal.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\metal_normal.jpg",
+      "metal_rough.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\metal_rough.jpg",
+      "metal_ao.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\metal_ao.jpg"
+    }
+  },
+  "rust": {
+    "source": "https://polyhaven.com/a/rust_coarse_01",
+    "asset": "rust_coarse_01",
+    "channels": {
+      "rust_diffuse.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\rust_diffuse.jpg",
+      "rust_normal.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\rust_normal.jpg",
+      "rust_rough.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\rust_rough.jpg",
+      "rust_ao.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\rust_ao.jpg"
+    }
+  },
+  "panel": {
+    "source": "https://polyhaven.com/a/factory_wall",
+    "asset": "factory_wall",
+    "channels": {
+      "panel_diffuse.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\panel_diffuse.jpg",
+      "panel_normal.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\panel_normal.jpg",
+      "panel_rough.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\panel_rough.jpg",
+      "panel_ao.jpg": "\\\\DC2K22-PEDAGO\\hager$\\Documents\\Projet par défaut\\Nightfall1984_Godot\\assets\\textures\\panel_ao.jpg"
+    }
+  },
+  "hdri": {
+    "source": "https://polyhaven.com/a/rogland_clear_night"
+  },
+  "Orbitron-Bold.ttf": {
+    "source": "https://raw.githubusercontent.com/google/fonts/c8e3197f63e4ff7b487f69f76cf17bcc023c980c/ofl/orbitron/Orbitron-Bold.ttf"
+  },
+  "Rajdhani-SemiBold.ttf": {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-SemiBold.ttf"
+  }
+}
