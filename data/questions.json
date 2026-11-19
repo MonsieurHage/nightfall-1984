@@ -46,760 +46,1853 @@
   ],
   "questions": [
     {
-      "id": "q001", "theme": "projet", "niveau": "5e", "difficulte": 1,
+      "id": "q001",
+      "theme": "projet",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Dans une démarche de projet, quelle question doit être clarifiée avant de chercher une solution technique ?",
-      "options": ["Quelle couleur choisir pour le boîtier ?", "Quel besoin l'objet doit-il satisfaire ?", "Quel logiciel de dessin utiliser ?", "Combien de vis faut-il acheter ?"],
+      "options": [
+        "Quelle fonction l'objet doit-il remplir ?",
+        "Quel besoin l'objet doit-il satisfaire ?",
+        "Quel matériau choisir pour le boîtier ?",
+        "Quel budget prévoir pour le projet ?"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3) fait commencer la démarche de projet par l'analyse du besoin, avant les choix de solutions. C'est un attendu de la classe de 5e.",
+      "explication": "Le programme (thème 3) fait commencer la démarche de projet par l'analyse du besoin, avant les choix de solutions. C'est un attendu de la classe de 5e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Imaginer, concevoir et réaliser » (5e)",
-      "contexte": "projet", "tags": ["besoin", "demarche_projet", "5e"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "besoin",
+        "demarche_projet",
+        "5e"
+      ],
+      "score": 100
     },
     {
-      "id": "q002", "theme": "projet", "niveau": "5e", "difficulte": 1,
+      "id": "q002",
+      "theme": "projet",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel document recense les exigences et les contraintes que doit respecter un objet technique ?",
-      "options": ["Le cahier des charges", "La table de routage", "Le schéma d'énergie", "Le diagramme de planification"],
+      "options": [
+        "Le cahier des charges",
+        "Le dossier technique",
+        "Le schéma d'énergie",
+        "Le diagramme de planification"
+      ],
       "answer": 0,
-      "explication": "Le cahier des charges formalise exigences et contraintes : c'est une connaissance du thème 3 du BO n°9 du 29/02/2024 et un attendu de la classe de 4e.",
+      "explication": "Le cahier des charges formalise exigences et contraintes : c'est une connaissance du thème 3 du programme et un attendu de la classe de 4e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique »",
-      "contexte": "projet", "tags": ["cahier_des_charges", "exigences"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "cahier_des_charges",
+        "exigences"
+      ],
+      "score": 100
     },
     {
-      "id": "q003", "theme": "projet", "niveau": "5e", "difficulte": 2,
+      "id": "q003",
+      "theme": "projet",
+      "niveau": "5e",
+      "difficulte": 2,
       "prompt": "Quel outil visualise les tâches, leurs durées et les contraintes entre elles ?",
-      "options": ["Un schéma bloc", "Un tableur de tri", "Un diagramme de planification des tâches", "Une chaîne d'information"],
+      "options": [
+        "Un schéma bloc",
+        "Un diagramme de Gantt",
+        "Un diagramme de planification des tâches",
+        "Une chaîne d'énergie"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « La gestion de projet technique ») donne comme connaissance le diagramme de planification des tâches, avec durées et contraintes entre tâches.",
+      "explication": "Le programme (thème 3, « La gestion de projet technique ») donne comme connaissance le diagramme de planification des tâches, avec durées et contraintes entre tâches.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, connaissances : diagramme de planification des tâches",
-      "contexte": "projet", "tags": ["planification", "gantt"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "planification",
+        "gantt"
+      ],
+      "score": 100
     },
     {
-      "id": "q004", "theme": "projet", "niveau": "4e", "difficulte": 2,
+      "id": "q004",
+      "theme": "projet",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "À quoi sert une revue de projet ?",
-      "options": ["À remplacer les essais par une simulation unique", "À suivre, valider et argumenter les choix de l'équipe", "À supprimer le cahier des charges", "À fabriquer directement le produit final"],
+      "options": [
+        "À remplacer les essais par une simulation unique",
+        "À suivre, valider et argumenter les choix de l'équipe",
+        "À supprimer le cahier des charges",
+        "À fabriquer directement le produit final"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3) précise le rôle de la revue de projet : suivi, validation, argumentation et explications, en travail collaboratif.",
+      "explication": "Le programme (thème 3) précise le rôle de la revue de projet : suivi, validation, argumentation et explications, en travail collaboratif.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique » (4e)",
-      "contexte": "projet", "tags": ["revue_de_projet", "collaboration"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "revue_de_projet",
+        "collaboration"
+      ],
+      "score": 100
     },
     {
-      "id": "q005", "theme": "projet", "niveau": "4e", "difficulte": 2,
+      "id": "q005",
+      "theme": "projet",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Que signifie écoconcevoir un objet ?",
-      "options": ["Réduire son impact environnemental dès la conception et sur tout son cycle de vie", "Utiliser exclusivement des matériaux neufs", "Attendre la fin de vie pour recycler", "Supprimer les tests de performance"],
+      "options": [
+        "Réduire son impact environnemental dès la conception et sur tout son cycle de vie",
+        "Utiliser exclusivement des matériaux neufs",
+        "Attendre la fin de vie pour recycler",
+        "Supprimer les tests de performance"
+      ],
       "answer": 0,
-      "explication": "Le guide d'accompagnement de mai 2024 (§3.3) et le BO n°9 du 29/02/2024 (thème 3) définissent l'écoconception comme une démarche préventive appliquée à tout le cycle de vie.",
+      "explication": "L'écoconception est une démarche préventive appliquée à tout le cycle de vie de l'objet.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, connaissances : l'écoconception ; guide mai 2024 §3.3",
-      "contexte": "projet", "tags": ["ecoconception", "developpement_durable"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "ecoconception",
+        "developpement_durable"
+      ],
+      "score": 100
     },
     {
-      "id": "q006", "theme": "projet", "niveau": "5e", "difficulte": 2,
+      "id": "q006",
+      "theme": "projet",
+      "niveau": "5e",
+      "difficulte": 2,
       "prompt": "Quelle étape du cycle de vie vient immédiatement avant l'assemblage d'un OST ?",
-      "options": ["La fin de vie", "L'utilisation", "Le transport du produit fini", "La fabrication des constituants"],
+      "options": [
+        "La fin de vie",
+        "Le transport du produit fini",
+        "L'utilisation",
+        "La fabrication des constituants"
+      ],
       "answer": 3,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Matériaux et procédés ») donne l'ordre : extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
+      "explication": "Le programme (thème 2, « Matériaux et procédés ») donne l'ordre : extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Matériaux et procédés », connaissances",
-      "contexte": "materiaux", "tags": ["cycle_de_vie", "assemblage"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "cycle_de_vie",
+        "assemblage"
+      ],
+      "score": 100
     },
     {
-      "id": "q007", "theme": "projet", "niveau": "3e", "difficulte": 2,
+      "id": "q007",
+      "theme": "projet",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel indicateur permet de comparer la facilité de réparation de deux appareils ?",
-      "options": ["L'indice de réparabilité", "La résolution de l'écran", "Le débit de la liaison réseau", "La tension d'alimentation"],
+      "options": [
+        "L'indice de réparabilité",
+        "La consommation électrique",
+        "La tension d'alimentation",
+        "Le débit de la liaison réseau"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1) cite l'indice de réparabilité parmi les critères de choix ; le guide de mai 2024 (§7.3) développe la réparabilité.",
+      "explication": "Le programme (thème 1) cite l'indice de réparabilité parmi les critères de choix ; le développe la réparabilité.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « Le choix d'un OST dans un contexte de développement durable »",
-      "contexte": "projet", "tags": ["reparabilite", "critere_choix"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "reparabilite",
+        "critere_choix"
+      ],
+      "score": 100
     },
     {
-      "id": "q008", "theme": "projet", "niveau": "4e", "difficulte": 2,
+      "id": "q008",
+      "theme": "projet",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Un prototype ne respecte pas une exigence du cahier des charges : quelle démarche est conforme au programme ?",
-      "options": ["Déclarer le prototype conforme", "Modifier l'exigence pour qu'elle corresponde au prototype", "Comparer résultats et exigences, proposer une amélioration puis retester", "Supprimer les mesures gênantes"],
+      "options": [
+        "Déclarer le prototype conforme",
+        "Modifier l'exigence pour qu'elle corresponde au prototype",
+        "Comparer résultats et exigences, proposer une amélioration puis retester",
+        "Supprimer les mesures gênantes"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « Valider les solutions techniques ») demande de comparer résultats et exigences, d'identifier les écarts puis de réessayer.",
+      "explication": "Le programme (thème 3, « Valider les solutions techniques ») demande de comparer résultats et exigences, d'identifier les écarts puis de réessayer.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Valider les solutions techniques par des simulations ou par des protocoles de tests »",
-      "contexte": "projet", "tags": ["validation", "protocole_test"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "validation",
+        "protocole_test"
+      ],
+      "score": 100
     },
     {
-      "id": "q009", "theme": "projet", "niveau": "5e", "difficulte": 1,
+      "id": "q009",
+      "theme": "projet",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle représentation est la plus adaptée pour imaginer la forme d'une pièce avant sa fabrication ?",
-      "options": ["Une table de routage", "Un croquis ou une modélisation", "Un algorithme de tri", "Une chaîne d'énergie"],
+      "options": [
+        "Un croquis",
+        "Un croquis ou une modélisation",
+        "Un modèle 3D",
+        "Un schéma bloc"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « Le prototypage de solutions ») attend croquis, schémas, graphiques, algorithmes et modélisation pour proposer une solution.",
+      "explication": "Le programme (thème 3, « Le prototypage de solutions ») attend croquis, schémas, graphiques, algorithmes et modélisation pour proposer une solution.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le prototypage de solutions » (5e)",
-      "contexte": "materiaux", "tags": ["representation", "prototypage"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "representation",
+        "prototypage"
+      ],
+      "score": 100
     },
     {
-      "id": "q010", "theme": "projet", "niveau": "4e", "difficulte": 2,
+      "id": "q010",
+      "theme": "projet",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Pourquoi le programme privilégie-t-il le travail en équipe lors de la réalisation d'un programme ?",
-      "options": ["Pour éviter d'avoir à tester", "Pour répartir les fonctionnalités à programmer de façon planifiée", "Pour supprimer la phase d'analyse", "Pour ne pas documenter le projet"],
+      "options": [
+        "Pour éviter d'avoir à tester",
+        "Pour répartir les fonctionnalités à programmer de façon planifiée",
+        "Pour supprimer la phase d'analyse",
+        "Pour ne pas documenter le projet"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3) indique que le travail en équipe est privilégié et que le partage des fonctionnalités est planifié et piloté par l'enseignant.",
+      "explication": "Le programme (thème 3) indique que le travail en équipe est privilégié et que le partage des fonctionnalités est planifié et piloté par l'enseignant.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Concevoir, écrire, tester et mettre au point un programme »",
-      "contexte": "terminal", "tags": ["travail_equipe", "programmation"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "travail_equipe",
+        "programmation"
+      ],
+      "score": 100
     },
     {
-      "id": "q011", "theme": "projet", "niveau": "3e", "difficulte": 2,
+      "id": "q011",
+      "theme": "projet",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Parmi ces critères, lequel relève du développement durable dans le choix d'un OST ?",
-      "options": ["Le nombre disponible de coloris", "La notoriété de la marque", "L'empreinte carbone et la recyclabilité", "Le nombre de vis du boîtier"],
+      "options": [
+        "L'empreinte carbone",
+        "La recyclabilité",
+        "L'empreinte carbone et la recyclabilité",
+        "La durabilité"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1) retient qualité, efficacité énergétique, durabilité, recyclabilité, bilan carbone et piliers du développement durable comme critères de choix.",
+      "explication": "Le programme (thème 1) retient qualité, efficacité énergétique, durabilité, recyclabilité, bilan carbone et piliers du développement durable comme critères de choix.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : critères de choix et piliers du développement durable",
-      "contexte": "projet", "tags": ["dd", "bilan_carbone"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "dd",
+        "bilan_carbone"
+      ],
+      "score": 100
     },
     {
-      "id": "q012", "theme": "projet", "niveau": "3e", "difficulte": 3,
+      "id": "q012",
+      "theme": "projet",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Quelle suite d'étapes respecte la démarche de projet du cycle 4 ?",
-      "options": ["Besoin → cahier des charges → solutions → prototype → tests → validation", "Prototype → besoin → tests → validation", "Tests → cahier des charges → besoin → validation", "Validation → fabrication → recherche du besoin"],
+      "options": [
+        "Besoin → cahier des charges → solutions → prototype → tests → validation",
+        "Prototype → besoin → tests → validation",
+        "Tests → cahier des charges → besoin → validation",
+        "Validation → fabrication → recherche du besoin"
+      ],
       "answer": 0,
-      "explication": "Le guide de mai 2024 rappelle que la démarche de projet part du besoin, passe par des objectifs intermédiaires et une planification, et se termine par un produit validé par des tests (BO n°9 du 29/02/2024, thème 3).",
+      "explication": "La démarche de projet part du besoin, passe par des objectifs intermédiaires et une planification, et se termine par un produit validé par des tests.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3 ; guide d'accompagnement mai 2024, démarches pédagogiques",
-      "contexte": "projet", "tags": ["demarche_projet", "sequence"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "demarche_projet",
+        "sequence"
+      ],
+      "score": 100
     },
     {
-      "id": "q013", "theme": "energie", "niveau": "5e", "difficulte": 1,
+      "id": "q013",
+      "theme": "energie",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Dans une lampe de poche, quelle est la chaîne d'énergie correcte ?",
-      "options": ["Batterie → lampe sans conversion", "Batterie (électrique) → interrupteur → lampe (lumineuse et thermique)", "Lampe → batterie → interrupteur", "Interrupteur (lumineuse) → batterie (électrique) → lampe"],
+      "options": [
+        "Batterie → lampe sans conversion",
+        "Batterie (électrique) → interrupteur → lampe (lumineuse et thermique)",
+        "Lampe → batterie → interrupteur",
+        "Interrupteur (lumineuse) → batterie (électrique) → lampe"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) attend l'identification des sources, formes d'énergie et conversions ; la lampe convertit l'énergie électrique en énergie lumineuse et thermique.",
+      "explication": "Le programme (thème 2) attend l'identification des sources, formes d'énergie et conversions ; la lampe convertit l'énergie électrique en énergie lumineuse et thermique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Fonctions, solutions, constituants de la chaîne d'énergie »",
-      "contexte": "energie", "tags": ["chaine_energie", "conversion"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "chaine_energie",
+        "conversion"
+      ],
+      "score": 100
     },
     {
-      "id": "q014", "theme": "energie", "niveau": "5e", "difficulte": 1,
+      "id": "q014",
+      "theme": "energie",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle forme d'énergie est délivrée par une batterie ?",
-      "options": ["Électrique", "Cinétique", "Lumineuse", "Potentielle de position"],
+      "options": [
+        "Électrique",
+        "Cinétique",
+        "Lumineuse",
+        "Potentielle de position"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) cite la batterie comme constituant de la chaîne d'énergie et demande d'indiquer la nature des énergies en entrée et en sortie.",
+      "explication": "Le programme (thème 2) cite la batterie comme constituant de la chaîne d'énergie et demande d'indiquer la nature des énergies en entrée et en sortie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : batterie, relais/interrupteur",
-      "contexte": "energie", "tags": ["batterie", "forme_energie"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "batterie",
+        "forme_energie"
+      ],
+      "score": 100
     },
     {
-      "id": "q015", "theme": "energie", "niveau": "4e", "difficulte": 2,
+      "id": "q015",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Un moteur reçoit 600 J en 30 s. Quelle puissance lui est fournie ?",
-      "options": ["18000 W", "2 W", "20 W", "600 W"],
+      "options": [
+        "30 W",
+        "2 W",
+        "20 W",
+        "60 W"
+      ],
       "answer": 2,
-      "explication": "P = E/t = 600/30 = 20 W. Le BO n°9 du 29/02/2024 (thème 1, « La performance des OST », liens avec les mathématiques) demande de calculer avec des grandeurs mesurables dans des unités adaptées.",
+      "explication": "P = E/t = 600/30 = 20 W. Le programme (thème 1, « La performance des OST », liens avec les mathématiques) demande de calculer avec des grandeurs mesurables dans des unités adaptées.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec les mathématiques",
-      "contexte": "energie", "tags": ["puissance", "calcul"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "puissance",
+        "calcul"
+      ],
+      "score": 100
     },
     {
-      "id": "q016", "theme": "energie", "niveau": "4e", "difficulte": 2,
+      "id": "q016",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Un convertisseur consomme 250 W et fournit 200 W utiles. Quel est son rendement ?",
-      "options": ["125 %", "80 %", "50 W", "20 %"],
+      "options": [
+        "60 %",
+        "80 %",
+        "20 W",
+        "125 %"
+      ],
       "answer": 1,
-      "explication": "Rendement = puissance utile / puissance consommée = 200/250 = 0,8, soit 80 %. Le BO n°9 du 29/02/2024 et le guide de mai 2024 (§3.3) font de l'efficacité énergétique un critère de choix.",
+      "explication": "Rendement = puissance utile / puissance consommée = 200/250 = 0,8, soit 80 %. Le programme et le font de l'efficacité énergétique un critère de choix.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
-      "contexte": "energie", "tags": ["rendement", "calcul"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "rendement",
+        "calcul"
+      ],
+      "score": 100
     },
     {
-      "id": "q017", "theme": "energie", "niveau": "5e", "difficulte": 1,
+      "id": "q017",
+      "theme": "energie",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle conversion d'énergie réalise un moteur électrique ?",
-      "options": ["Thermique → lumineuse", "Électrique → mécanique (cinétique)", "Chimique → électrique", "Lumineuse → électrique"],
+      "options": [
+        "Thermique → lumineuse",
+        "Électrique → mécanique (cinétique)",
+        "Chimique → électrique",
+        "Lumineuse → électrique"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) donne explicitement la conversion du moteur électrique parmi les connaissances de la chaîne d'énergie.",
+      "explication": "Le programme (thème 2) donne explicitement la conversion du moteur électrique parmi les connaissances de la chaîne d'énergie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions d'énergie",
-      "contexte": "energie", "tags": ["moteur", "conversion"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "moteur",
+        "conversion"
+      ],
+      "score": 100
     },
     {
-      "id": "q018", "theme": "energie", "niveau": "5e", "difficulte": 1,
+      "id": "q018",
+      "theme": "energie",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel constituant permet d'ouvrir ou de fermer un circuit électrique ?",
-      "options": ["Le relais ou l'interrupteur", "Le moteur", "La lampe", "Le radiateur"],
+      "options": [
+        "Le relais ou l'interrupteur",
+        "Le moteur",
+        "Le capteur",
+        "Le radiateur"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, connaissances de la chaîne d'énergie) attribue au relais/interrupteur la fonction de commander le passage de l'énergie.",
+      "explication": "Le programme (thème 2, connaissances de la chaîne d'énergie) attribue au relais/interrupteur la fonction de commander le passage de l'énergie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : fonctions de la batterie et du relais",
-      "contexte": "energie", "tags": ["interrupteur", "relais"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "interrupteur",
+        "relais"
+      ],
+      "score": 100
     },
     {
-      "id": "q019", "theme": "energie", "niveau": "3e", "difficulte": 2,
+      "id": "q019",
+      "theme": "energie",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel schéma bloc décrit correctement une installation solaire alimentant une LED ?",
-      "options": ["Panneau (lumineuse → électrique) → LED (électrique → lumineuse)", "LED → panneau → batterie", "Panneau (électrique → thermique) → LED (thermique → lumineuse)", "Batterie (cinétique → électrique) → LED"],
+      "options": [
+        "Panneau (lumineuse → électrique) → LED (électrique → lumineuse)",
+        "LED → panneau → batterie",
+        "Panneau (électrique → thermique) → LED (thermique → lumineuse)",
+        "Batterie (cinétique → électrique) → LED"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Élaborer à l'aide d'un schéma bloc la chaîne d'énergie ») attend ce type de représentation en classe de 3e.",
+      "explication": "Le programme (thème 2, « Élaborer à l'aide d'un schéma bloc la chaîne d'énergie ») attend ce type de représentation en classe de 3e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 3e : schéma bloc de la chaîne d'énergie",
-      "contexte": "energie", "tags": ["schema_bloc", "solaire"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "schema_bloc",
+        "solaire"
+      ],
+      "score": 100
     },
     {
-      "id": "q020", "theme": "energie", "niveau": "4e", "difficulte": 2,
+      "id": "q020",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Dans un vérin, quelle énergie est convertie en mouvement mécanique ?",
-      "options": ["L'énergie de pression du fluide", "L'énergie lumineuse", "L'énergie chimique de la batterie", "L'énergie potentielle de pesanteur"],
+      "options": [
+        "L'énergie de pression du fluide",
+        "L'énergie lumineuse",
+        "L'énergie chimique de la batterie",
+        "L'énergie potentielle de pesanteur"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) cite le vérin parmi les constituants dont il faut connaître la conversion : l'énergie de pression devient énergie mécanique.",
+      "explication": "Le programme (thème 2) cite le vérin parmi les constituants dont il faut connaître la conversion : l'énergie de pression devient énergie mécanique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions (vérin)",
-      "contexte": "energie", "tags": ["verin", "conversion"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "verin",
+        "conversion"
+      ],
+      "score": 100
     },
     {
-      "id": "q021", "theme": "energie", "niveau": "4e", "difficulte": 1,
+      "id": "q021",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Parmi ces sources, laquelle est renouvelable ?",
-      "options": ["Le pétrole", "Le charbon", "Le gaz naturel", "Le rayonnement solaire"],
+      "options": [
+        "Le pétrole",
+        "Le charbon",
+        "Le gaz naturel",
+        "Le rayonnement solaire"
+      ],
       "answer": 3,
-      "explication": "Le guide d'accompagnement de mai 2024 (§3.3) introduit le choix critérié d'une source renouvelable ou non renouvelable, attendu au thème 3 du BO n°9 du 29/02/2024.",
+      "explication": "Le programme introduit le choix critérié d'une source renouvelable ou non renouvelable, attendu au thème 3.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
-      "contexte": "energie", "tags": ["source_energie", "renouvelable"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "source_energie",
+        "renouvelable"
+      ],
+      "score": 100
     },
     {
-      "id": "q022", "theme": "energie", "niveau": "4e", "difficulte": 2,
+      "id": "q022",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel appareil mesure la tension aux bornes d'un générateur ?",
-      "options": ["Un voltmètre", "Un thermomètre", "Un dynamomètre", "Un luxmètre"],
+      "options": [
+        "Un voltmètre",
+        "Un thermomètre",
+        "Un dynamomètre",
+        "Un luxmètre"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « La performance des OST », liens avec la physique-chimie) demande de choisir les appareils de mesure et d'exploiter les lois de l'électricité.",
+      "explication": "Le programme (thème 1, « La performance des OST », liens avec la physique-chimie) demande de choisir les appareils de mesure et d'exploiter les lois de l'électricité.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec la physique-chimie",
-      "contexte": "energie", "tags": ["mesure", "voltmètre"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "mesure",
+        "voltmètre"
+      ],
+      "score": 100
     },
     {
-      "id": "q023", "theme": "energie", "niveau": "3e", "difficulte": 3,
+      "id": "q023",
+      "theme": "energie",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Pourquoi le rendement d'une machine est-il toujours inférieur à 1 ?",
-      "options": ["Parce que l'énergie disparaît", "Parce qu'une partie de l'énergie est convertie en formes non utiles, souvent thermiques", "Parce que les mesures sont fausses", "Parce que la puissance utile est plus grande"],
+      "options": [
+        "Parce que l'énergie disparaît",
+        "Parce qu'une partie de l'énergie est convertie en formes non utiles, souvent thermiques",
+        "Parce que les mesures sont fausses",
+        "Parce que la puissance utile est plus grande"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) demande d'identifier conversions et transferts : l'énergie se conserve, mais une partie est transférée sous une forme non utile.",
+      "explication": "Le programme (thème 2) demande d'identifier conversions et transferts : l'énergie se conserve, mais une partie est transférée sous une forme non utile.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « sources, formes d'énergie, conversions et transferts »",
-      "contexte": "energie", "tags": ["rendement", "transferts"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "rendement",
+        "transferts"
+      ],
+      "score": 100
     },
     {
-      "id": "q024", "theme": "energie", "niveau": "4e", "difficulte": 1,
+      "id": "q024",
+      "theme": "energie",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quelle grandeur exprime l'autonomie énergétique d'un appareil ?",
-      "options": ["Le nombre de pixels", "La durée de fonctionnement avant recharge", "La couleur du boîtier", "Le nombre de boutons"],
+      "options": [
+        "Le nombre de bits",
+        "La durée de fonctionnement avant recharge",
+        "La masse de l'objet",
+        "La puissance nominale"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « La performance des OST ») donne l'autonomie énergétique comme exemple de grandeur mesurable de performance.",
+      "explication": "Le programme (thème 1, « La performance des OST ») donne l'autonomie énergétique comme exemple de grandeur mesurable de performance.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : critères de performance",
-      "contexte": "projet", "tags": ["autonomie", "performance"], "score": 100
+      "contexte": "projet",
+      "tags": [
+        "autonomie",
+        "performance"
+      ],
+      "score": 100
     },
     {
-      "id": "q025", "theme": "information", "niveau": "5e", "difficulte": 1,
+      "id": "q025",
+      "theme": "information",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel est le rôle d'un capteur dans une chaîne d'information ?",
-      "options": ["Convertir une grandeur physique en donnée exploitable", "Exécuter le programme", "Afficher le résultat", "Stocker le programme"],
+      "options": [
+        "Convertir une grandeur physique en donnée exploitable",
+        "Exécuter le programme",
+        "Afficher le résultat",
+        "Stocker le programme"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Fonctions, solutions, constituants de la chaîne d'information ») définit le capteur (température, présence, distance) comme acquisition de données.",
+      "explication": "Le programme (thème 2, « Fonctions, solutions, constituants de la chaîne d'information ») définit le capteur (température, présence, distance) comme acquisition de données.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : capteurs et IHM",
-      "contexte": "terminal", "tags": ["capteur", "chaine_information"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "capteur",
+        "chaine_information"
+      ],
+      "score": 100
     },
     {
-      "id": "q026", "theme": "information", "niveau": "5e", "difficulte": 1,
+      "id": "q026",
+      "theme": "information",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel composant traite les données et commande la sortie d'un OST ?",
-      "options": ["Le microcontrôleur", "La lampe", "Le boîtier", "La batterie"],
+      "options": [
+        "Le microcontrôleur",
+        "Le capteur",
+        "Le boîtier",
+        "Le vérin"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) cite le microcontrôleur comme constituant central de la chaîne d'information, entre capteurs et actionneurs.",
+      "explication": "Le programme (thème 2) cite le microcontrôleur comme constituant central de la chaîne d'information, entre capteurs et actionneurs.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : microcontrôleur",
-      "contexte": "terminal", "tags": ["microcontroleur", "traitement"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "microcontroleur",
+        "traitement"
+      ],
+      "score": 100
     },
     {
-      "id": "q027", "theme": "information", "niveau": "4e", "difficulte": 1,
+      "id": "q027",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quel composant est un actionneur ?",
-      "options": ["Un bouton", "Un afficheur", "Un moteur commandé par la sortie du programme", "Un capteur de température"],
+      "options": [
+        "Un bouton",
+        "Un afficheur",
+        "Un moteur commandé par la sortie du programme",
+        "Un capteur de température"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) distingue les entrées (capteurs, IHM) et les sorties du programme, notamment vers un actionneur.",
+      "explication": "Le programme (thème 2) distingue les entrées (capteurs, IHM) et les sorties du programme, notamment vers un actionneur.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Algorithmique et programmation » : entrées et sorties",
-      "contexte": "terminal", "tags": ["actionneur", "sortie"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "actionneur",
+        "sortie"
+      ],
+      "score": 100
     },
     {
-      "id": "q028", "theme": "information", "niveau": "4e", "difficulte": 1,
+      "id": "q028",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quelles valeurs peut prendre une donnée de type booléen ?",
-      "options": ["Vrai ou faux", "Seulement des nombres décimaux", "Uniquement des couleurs", "Des phrases quelconques"],
+      "options": [
+        "Vrai ou faux",
+        "Seulement des nombres décimaux",
+        "Uniquement des couleurs",
+        "Des phrases quelconques"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Structuration et traitement des données ») donne les types mot, nombre et booléen comme vocabulaire des données.",
+      "explication": "Le programme (thème 2, « Structuration et traitement des données ») donne les types mot, nombre et booléen comme vocabulaire des données.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : types de données",
-      "contexte": "terminal", "tags": ["booleen", "types"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "booleen",
+        "types"
+      ],
+      "score": 100
     },
     {
-      "id": "q029", "theme": "information", "niveau": "5e", "difficulte": 1,
+      "id": "q029",
+      "theme": "information",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Combien de bits contient un octet ?",
-      "options": ["4", "16", "8", "1024"],
+      "options": [
+        "4",
+        "16",
+        "8",
+        "1024"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « Usages et impacts sociétaux du numérique ») attend la connaissance des unités bit et octet et de leurs multiples.",
+      "explication": "Le programme (thème 1, « Usages et impacts sociétaux du numérique ») attend la connaissance des unités bit et octet et de leurs multiples.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : unité de quantité d'information",
-      "contexte": "terminal", "tags": ["bit", "octet"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "bit",
+        "octet"
+      ],
+      "score": 100
     },
     {
-      "id": "q030", "theme": "information", "niveau": "4e", "difficulte": 2,
+      "id": "q030",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Dans un réseau local, quel équipement relie les terminaux entre eux ?",
-      "options": ["Le commutateur", "Le routeur Internet", "Le serveur de messagerie", "L'imprimante"],
+      "options": [
+        "Le commutateur",
+        "Le routeur Internet",
+        "Le serveur de messagerie",
+        "L'imprimante"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « La circulation de l'information dans un réseau informatique ») demande d'identifier le rôle du commutateur dans un réseau local.",
+      "explication": "Le programme (thème 2, « La circulation de l'information dans un réseau informatique ») demande d'identifier le rôle du commutateur dans un réseau local.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « La circulation de l'information dans un réseau informatique »",
-      "contexte": "terminal", "tags": ["reseau_local", "commutateur"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "reseau_local",
+        "commutateur"
+      ],
+      "score": 100
     },
     {
-      "id": "q031", "theme": "information", "niveau": "4e", "difficulte": 2,
+      "id": "q031",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "À quoi sert une adresse IP dans un réseau local ?",
-      "options": ["À identifier un terminal pour communiquer", "À crypter les fichiers", "À mesurer la température", "À augmenter la mémoire"],
+      "options": [
+        "À identifier un terminal pour communiquer",
+        "À crypter les fichiers",
+        "À mesurer la température",
+        "À augmenter la mémoire"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) attend que l'élève justifie la nécessité d'identifier les terminaux et connaisse le rôle et la structure d'une adresse IP.",
+      "explication": "Le programme (thème 2) attend que l'élève justifie la nécessité d'identifier les terminaux et connaisse le rôle et la structure d'une adresse IP.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : rôle et structure d'une adresse IP",
-      "contexte": "terminal", "tags": ["adresse_ip", "reseau"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "adresse_ip",
+        "reseau"
+      ],
+      "score": 100
     },
     {
-      "id": "q032", "theme": "information", "niveau": "3e", "difficulte": 2,
+      "id": "q032",
+      "theme": "information",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel équipement permet de faire communiquer deux réseaux différents ?",
-      "options": ["Le commutateur", "Le routeur et ses tables de routage", "La carte réseau d'un seul terminal", "Le capteur de présence"],
+      "options": [
+        "Le commutateur",
+        "Le routeur et ses tables de routage",
+        "La carte réseau d'un seul terminal",
+        "Le capteur de présence"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) donne au routeur et aux tables de routage le rôle de faire communiquer plusieurs réseaux, attendu en classe de 3e.",
+      "explication": "Le programme (thème 2) donne au routeur et aux tables de routage le rôle de faire communiquer plusieurs réseaux, attendu en classe de 3e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 3e : protocole et tables de routage",
-      "contexte": "terminal", "tags": ["routeur", "routage"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "routeur",
+        "routage"
+      ],
+      "score": 100
     },
     {
-      "id": "q033", "theme": "information", "niveau": "5e", "difficulte": 2,
+      "id": "q033",
+      "theme": "information",
+      "niveau": "5e",
+      "difficulte": 2,
       "prompt": "Programme : SI température > 25 ALORS LED allumée SINON LED éteinte. Que se passe-t-il à 24 °C ?",
-      "options": ["La LED s'allume", "La LED s'éteint", "Le programme s'arrête", "La température change"],
+      "options": [
+        "La LED s'allume",
+        "La LED s'éteint",
+        "Le programme s'arrête",
+        "La température change"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Algorithmique et programmation ») attend la compréhension de l'instruction conditionnelle et la modification des paramètres d'entrée dès la classe de 5e.",
+      "explication": "Le programme (thème 2, « Algorithmique et programmation ») attend la compréhension de l'instruction conditionnelle et la modification des paramètres d'entrée dès la classe de 5e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : instruction conditionnelle",
-      "contexte": "terminal", "tags": ["algorithme", "condition"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "algorithme",
+        "condition"
+      ],
+      "score": 100
     },
     {
-      "id": "q034", "theme": "information", "niveau": "3e", "difficulte": 2,
+      "id": "q034",
+      "theme": "information",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quelle structure de données permet de parcourir et traiter plusieurs mesures ?",
-      "options": ["La liste", "Le bit", "L'afficheur", "Le relais"],
+      "options": [
+        "La liste",
+        "L'octet",
+        "Le capteur",
+        "Le moteur"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) donne la liste comme structure de données pour stocker, parcourir et traiter des données issues du programme.",
+      "explication": "Le programme (thème 2) donne la liste comme structure de données pour stocker, parcourir et traiter des données issues du programme.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : structure de données « listes »",
-      "contexte": "terminal", "tags": ["liste", "donnees"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "liste",
+        "donnees"
+      ],
+      "score": 100
     },
     {
-      "id": "q035", "theme": "information", "niveau": "4e", "difficulte": 2,
+      "id": "q035",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quelle extension est typiquement associée à un fichier de données tabulées ?",
-      "options": [".mp3", ".exe", ".csv", ".hdr"],
+      "options": [
+        ".pdf",
+        ".txt",
+        ".csv",
+        ".jpg"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1) cite les fichiers texte, image, tableur ou CSV et demande de connaître extension et format de fichiers.",
+      "explication": "Le programme (thème 1) cite les fichiers texte, image, tableur ou CSV et demande de connaître extension et format de fichiers.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : fichiers et arborescence",
-      "contexte": "terminal", "tags": ["csv", "stockage"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "csv",
+        "stockage"
+      ],
+      "score": 100
     },
     {
-      "id": "q036", "theme": "information", "niveau": "4e", "difficulte": 2,
+      "id": "q036",
+      "theme": "information",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Dans un programme d'OST, qu'est-ce qu'un événement ?",
-      "options": ["Un déclencheur d'une séquence d'instructions", "Une panne du capteur", "Un type de fichier", "Une unité de débit"],
+      "options": [
+        "Un déclencheur d'une séquence d'instructions",
+        "Une panne du capteur",
+        "Un type de fichier",
+        "Une unité de débit"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, connaissances de programmation) définit l'événement et le déclenchement d'une séquence d'instructions par un événement.",
+      "explication": "Le programme (thème 2, connaissances de programmation) définit l'événement et le déclenchement d'une séquence d'instructions par un événement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : événement et séquence d'instructions",
-      "contexte": "terminal", "tags": ["evenement", "programmation"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "evenement",
+        "programmation"
+      ],
+      "score": 100
     },
     {
-      "id": "q037", "theme": "materiaux", "niveau": "5e", "difficulte": 1,
+      "id": "q037",
+      "theme": "materiaux",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle propriété est indispensable pour un conducteur électrique ?",
-      "options": ["Une forte conductibilité électrique", "Une faible masse volumique seulement", "Une transparence élevée", "Une grande dureté uniquement"],
+      "options": [
+        "Une forte conductibilité électrique",
+        "Une faible conductibilité électrique",
+        "Une grande dureté",
+        "Une forte conductibilité thermique"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Le dépannage et la réparation ») cite la conductibilité électrique et thermique comme connaissance sur les matériaux.",
+      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite la conductibilité électrique et thermique comme connaissance sur les matériaux.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conductibilités électrique et thermique",
-      "contexte": "materiaux", "tags": ["conductibilite", "propriete"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "conductibilite",
+        "propriete"
+      ],
+      "score": 100
     },
     {
-      "id": "q038", "theme": "materiaux", "niveau": "5e", "difficulte": 1,
+      "id": "q038",
+      "theme": "materiaux",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel procédé fabrique une pièce par ajout de matière couche par couche ?",
-      "options": ["Le pliage", "La fabrication additive (impression 3D)", "Le thermoformage", "L'usinage par enlèvement de matière"],
+      "options": [
+        "Le pliage",
+        "La fabrication additive (impression 3D)",
+        "Le thermoformage",
+        "L'usinage par enlèvement de matière"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) distingue procédés d'ajout et d'enlèvement de matière et cite l'imprimante 3D parmi les moyens de production.",
+      "explication": "Le programme (thème 2) distingue procédés d'ajout et d'enlèvement de matière et cite l'imprimante 3D parmi les moyens de production.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : moyens de production et procédés d'obtention de pièce",
-      "contexte": "materiaux", "tags": ["impression_3d", "fabrication_additive"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "impression_3d",
+        "fabrication_additive"
+      ],
+      "score": 100
     },
     {
-      "id": "q039", "theme": "materiaux", "niveau": "4e", "difficulte": 2,
+      "id": "q039",
+      "theme": "materiaux",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Une poutre fléchit sous une charge : quel mode de sollicitation subit-elle ?",
-      "options": ["La torsion", "La traction pure", "La flexion", "La compression uniquement"],
+      "options": [
+        "La torsion",
+        "La traction pure",
+        "La flexion",
+        "La compression uniquement"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Le dépannage et la réparation ») cite la flexion et la torsion comme modes de sollicitation des matériaux.",
+      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite la flexion et la torsion comme modes de sollicitation des matériaux.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : modes de sollicitation",
-      "contexte": "materiaux", "tags": ["flexion", "mecanique_materiaux"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "flexion",
+        "mecanique_materiaux"
+      ],
+      "score": 100
     },
     {
-      "id": "q040", "theme": "materiaux", "niveau": "4e", "difficulte": 2,
+      "id": "q040",
+      "theme": "materiaux",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Pour une plaque qui doit évacuer la chaleur, quelle propriété rechercher ?",
-      "options": ["Une faible conductibilité thermique", "Une forte conductibilité thermique", "Une couleur sombre", "Une grande épaisseur systématique"],
+      "options": [
+        "Une faible conductibilité thermique",
+        "Une forte conductibilité thermique",
+        "Une couleur sombre",
+        "Une forte résistance mécanique"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) attend la connaissance de la conductibilité thermique pour justifier le choix d'un matériau.",
+      "explication": "Le programme (thème 2) attend la connaissance de la conductibilité thermique pour justifier le choix d'un matériau.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Matériaux et procédés » : caractéristiques et propriétés",
-      "contexte": "materiaux", "tags": ["thermique", "choix_materiau"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "thermique",
+        "choix_materiau"
+      ],
+      "score": 100
     },
     {
-      "id": "q041", "theme": "materiaux", "niveau": "4e", "difficulte": 1,
+      "id": "q041",
+      "theme": "materiaux",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quel assemblage facilite le démontage pour la réparation ?",
-      "options": ["Le collage", "Le soudage", "Les vis (assemblage démontable)", "Le rivetage définitif"],
+      "options": [
+        "Le collage",
+        "Le soudage",
+        "Les vis (assemblage démontable)",
+        "Le rivetage définitif"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) distingue assemblages fixes et démontables et les relie à la réparabilité (thème 1).",
+      "explication": "Le programme (thème 2) distingue assemblages fixes et démontables et les relie à la réparabilité (thème 1).",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : assemblages fixes et démontables",
-      "contexte": "materiaux", "tags": ["assemblage", "reparabilite"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "assemblage",
+        "reparabilite"
+      ],
+      "score": 100
     },
     {
-      "id": "q042", "theme": "materiaux", "niveau": "3e", "difficulte": 2,
+      "id": "q042",
+      "theme": "materiaux",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel critère environnemental est à considérer lors du choix d'un matériau ?",
-      "options": ["Sa disponibilité et sa recyclabilité", "Sa couleur", "La taille de son emballage", "Son nom commercial"],
+      "options": [
+        "Sa disponibilité et sa recyclabilité",
+        "Sa recyclabilité",
+        "Sa disponibilité",
+        "Son empreinte carbone"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « Le choix des matériaux ») et le guide de mai 2024 (§3.3) attendent disponibilité, valorisation, recyclage et empreinte carbone.",
+      "explication": "Le programme (thème 3, « Le choix des matériaux ») et le attendent disponibilité, valorisation, recyclage et empreinte carbone.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix des matériaux » ; guide mai 2024 §3.3",
-      "contexte": "materiaux", "tags": ["recyclage", "empreinte_carbone"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "recyclage",
+        "empreinte_carbone"
+      ],
+      "score": 100
     },
     {
-      "id": "q043", "theme": "materiaux", "niveau": "5e", "difficulte": 1,
+      "id": "q043",
+      "theme": "materiaux",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel matériau choisir pour une fenêtre devant laisser passer la lumière ?",
-      "options": ["De l'acier", "Du polymère transparent (PMMA)", "Du béton", "Du cuivre"],
+      "options": [
+        "Du polymère transparent",
+        "Du polymère transparent (PMMA)",
+        "Du cuivre",
+        "Du béton"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Matériaux et procédés ») demande de connaître les caractéristiques et propriétés des principaux matériaux pour justifier un choix.",
+      "explication": "Le programme (thème 2, « Matériaux et procédés ») demande de connaître les caractéristiques et propriétés des principaux matériaux pour justifier un choix.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : caractéristiques des principaux matériaux",
-      "contexte": "materiaux", "tags": ["polymere", "transparence"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "polymere",
+        "transparence"
+      ],
+      "score": 100
     },
     {
-      "id": "q044", "theme": "materiaux", "niveau": "4e", "difficulte": 2,
+      "id": "q044",
+      "theme": "materiaux",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel procédé de mise en forme consiste à chauffer une plaque puis à lui donner une forme ?",
-      "options": ["Le thermoformage", "Le pliage à froid", "La fabrication additive", "Le perçage"],
+      "options": [
+        "Le thermoformage",
+        "Le pliage à froid",
+        "La fabrication additive",
+        "Le perçage"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Le dépannage et la réparation ») cite le thermoformage et le pliage parmi les procédés de mise en forme.",
+      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite le thermoformage et le pliage parmi les procédés de mise en forme.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : procédés de mise en forme",
-      "contexte": "materiaux", "tags": ["thermoformage", "procede"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "thermoformage",
+        "procede"
+      ],
+      "score": 100
     },
     {
-      "id": "q045", "theme": "materiaux", "niveau": "4e", "difficulte": 2,
+      "id": "q045",
+      "theme": "materiaux",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Comment valider la tenue mécanique d'une pièce en classe de 4e ?",
-      "options": ["En mettant en œuvre un protocole de test fourni", "En la regardant sous différents angles", "En la peignant", "En la rangeant dans un tiroir"],
+      "options": [
+        "En mettant en œuvre un protocole de test fourni",
+        "En appliquant un protocole de test",
+        "En la modélisant",
+        "En la comparant au cahier des charges"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « La validation du comportement mécanique d'un matériau ») prévoit un protocole de test fourni en 4e et une simulation fournie en 5e.",
+      "explication": "Le programme (thème 3, « La validation du comportement mécanique d'un matériau ») prévoit un protocole de test fourni en 4e et une simulation fournie en 5e.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La validation du comportement mécanique d'un matériau »",
-      "contexte": "materiaux", "tags": ["protocole_test", "validation"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "protocole_test",
+        "validation"
+      ],
+      "score": 100
     },
     {
-      "id": "q046", "theme": "materiaux", "niveau": "5e", "difficulte": 1,
+      "id": "q046",
+      "theme": "materiaux",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle est la première étape du cycle de vie d'un matériau ?",
-      "options": ["L'assemblage", "L'extraction des matières premières", "L'utilisation", "Le transport du produit fini"],
+      "options": [
+        "La transformation",
+        "L'extraction des matières premières",
+        "Le transport du produit fini",
+        "L'utilisation"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) donne la suite extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
+      "explication": "Le programme (thème 2) donne la suite extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : étapes du cycle de vie",
-      "contexte": "materiaux", "tags": ["cycle_de_vie", "extraction"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "cycle_de_vie",
+        "extraction"
+      ],
+      "score": 100
     },
     {
-      "id": "q047", "theme": "materiaux", "niveau": "3e", "difficulte": 3,
+      "id": "q047",
+      "theme": "materiaux",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Un objet doit être à la fois léger et rigide : quelle méthode est conforme au BO ?",
-      "options": ["Choisir le matériau le moins cher sans essai", "Comparer les propriétés des matériaux et arrêter un choix critérié", "Prendre le premier matériau de la liste", "Augmenter l'épaisseur au maximum"],
+      "options": [
+        "Choisir le matériau le moins cher sans essai",
+        "Comparer les propriétés des matériaux et arrêter un choix critérié",
+        "Prendre le premier matériau de la liste",
+        "Augmenter l'épaisseur au maximum"
+      ],
       "answer": 1,
-      "explication": "Le guide d'accompagnement de mai 2024 (§3.3) et le BO n°9 du 29/02/2024 (thème 3) demandent un choix critérié de matériau au regard des contraintes techniques et environnementales.",
+      "explication": "Le choix d'un matériau doit être critérié au regard des contraintes techniques et environnementales.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix des matériaux » (3e) ; guide mai 2024 §3.3",
-      "contexte": "materiaux", "tags": ["choix_criterie", "proprietes"], "score": 100
+      "contexte": "materiaux",
+      "tags": [
+        "choix_criterie",
+        "proprietes"
+      ],
+      "score": 100
     },
     {
-      "id": "q048", "theme": "materiaux", "niveau": "5e", "difficulte": 1,
+      "id": "q048",
+      "theme": "materiaux",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel équipement de protection individuelle est indispensable lors d'une découpe ?",
-      "options": ["Des lunettes de protection", "Une montre connectée", "Un casque audio", "Des gants en laine"],
+      "options": [
+        "Des lunettes de protection",
+        "Un masque respiratoire",
+        "Des gants adaptés",
+        "Un carnet de sécurité"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, règles usuelles de sécurité dans l'atelier) attend la mise en œuvre des équipements de protection individuelle.",
+      "explication": "Le programme (thème 2, règles usuelles de sécurité dans l'atelier) attend la mise en œuvre des équipements de protection individuelle.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : règles usuelles de sécurité en atelier",
-      "contexte": "securite", "tags": ["EPI", "atelier"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "EPI",
+        "atelier"
+      ],
+      "score": 100
     },
     {
-      "id": "q049", "theme": "mecanique", "niveau": "5e", "difficulte": 1,
+      "id": "q049",
+      "theme": "mecanique",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel mécanisme transmet un mouvement entre deux roues dentées ?",
-      "options": ["Une courroie", "Un engrenage", "Un ressort", "Un interrupteur"],
+      "options": [
+        "Une courroie",
+        "Un engrenage",
+        "Un ressort",
+        "Un interrupteur"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) cite engrenages, courroies et chaînes comme mécanismes de transmission de mouvements.",
+      "explication": "Le programme (thème 2) cite engrenages, courroies et chaînes comme mécanismes de transmission de mouvements.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : transmission et transformation de mouvements",
-      "contexte": "mecanique", "tags": ["engrenage", "transmission"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "engrenage",
+        "transmission"
+      ],
+      "score": 100
     },
     {
-      "id": "q050", "theme": "mecanique", "niveau": "4e", "difficulte": 2,
+      "id": "q050",
+      "theme": "mecanique",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel mécanisme transforme un mouvement de rotation en mouvement de va-et-vient ?",
-      "options": ["Une courroie", "Une chaîne", "Une bielle-manivelle", "Un simple pignon"],
+      "options": [
+        "Une courroie",
+        "Une chaîne",
+        "Une bielle-manivelle",
+        "Un simple pignon"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) demande de distinguer transmissions et transformations de mouvements ; la bielle-manivelle transforme la rotation en translation alternative.",
+      "explication": "Le programme (thème 2) demande de distinguer transmissions et transformations de mouvements ; la bielle-manivelle transforme la rotation en translation alternative.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « mouvements mécaniques : transmissions et transformations »",
-      "contexte": "mecanique", "tags": ["bielle_manivelle", "transformation"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "bielle_manivelle",
+        "transformation"
+      ],
+      "score": 100
     },
     {
-      "id": "q051", "theme": "mecanique", "niveau": "4e", "difficulte": 2,
+      "id": "q051",
+      "theme": "mecanique",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Une roue de 20 dents entraîne une roue de 40 dents. Comment tourne la roue entraînée ?",
-      "options": ["Deux fois plus vite", "Deux fois plus lentement", "À la même vitesse", "Elle ne tourne pas"],
+      "options": [
+        "Deux fois plus vite",
+        "Deux fois plus lentement",
+        "À la même vitesse",
+        "Elle ne tourne pas"
+      ],
       "answer": 1,
-      "explication": "Le rapport des nombres de dents donne la réduction de vitesse ; le BO n°9 du 29/02/2024 (thème 2) attend l'analyse des transmissions et le lien avec les grandeurs mesurables.",
+      "explication": "Le rapport des nombres de dents donne la réduction de vitesse ; le programme (thème 2) attend l'analyse des transmissions et le lien avec les grandeurs mesurables.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, transmissions de mouvements ; lien avec les mathématiques",
-      "contexte": "mecanique", "tags": ["engrenage", "rapport"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "engrenage",
+        "rapport"
+      ],
+      "score": 100
     },
     {
-      "id": "q052", "theme": "mecanique", "niveau": "5e", "difficulte": 1,
+      "id": "q052",
+      "theme": "mecanique",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Dans quelle unité exprime-t-on couramment une vitesse de rotation ?",
-      "options": ["En mètres", "En newtons", "En tours par minute (tr/min)", "En octets"],
+      "options": [
+        "En tours par minute",
+        "En octets",
+        "En tours par minute (tr/min)",
+        "En pascals"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « La performance des OST ») donne la vitesse comme grandeur mesurable, à exprimer dans une unité adaptée.",
+      "explication": "Le programme (thème 1, « La performance des OST ») donne la vitesse comme grandeur mesurable, à exprimer dans une unité adaptée.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec les mathématiques",
-      "contexte": "mecanique", "tags": ["vitesse", "unite"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "vitesse",
+        "unite"
+      ],
+      "score": 100
     },
     {
-      "id": "q053", "theme": "mecanique", "niveau": "4e", "difficulte": 2,
+      "id": "q053",
+      "theme": "mecanique",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Une courroie patine sur sa poulie : quelle fonction est perturbée ?",
-      "options": ["La conversion lumineuse", "La transmission de mouvement", "Le stockage des données", "La protection électrique"],
+      "options": [
+        "Le stockage des données",
+        "La transmission de mouvement",
+        "La conversion lumineuse",
+        "La conversion électrique"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) demande d'identifier un dysfonctionnement et d'y remédier ; une courroie qui patine ne transmet plus correctement le mouvement.",
+      "explication": "Le programme (thème 2) demande d'identifier un dysfonctionnement et d'y remédier ; une courroie qui patine ne transmet plus correctement le mouvement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
-      "contexte": "mecanique", "tags": ["dysfonctionnement", "courroie"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "dysfonctionnement",
+        "courroie"
+      ],
+      "score": 100
     },
     {
-      "id": "q054", "theme": "mecanique", "niveau": "3e", "difficulte": 3,
+      "id": "q054",
+      "theme": "mecanique",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Quelle suite constitue un protocole de dépannage cohérent ?",
-      "options": ["Réparer puis chercher la panne", "Observer, formuler une hypothèse, tester, réparer, valider", "Remplacer tous les composants sans test", "Attendre que la panne disparaisse"],
+      "options": [
+        "Observer, hypotheser, tester, réparer, valider",
+        "Observer, formuler une hypothèse, tester, réparer, valider",
+        "Modifier le cahier des charges",
+        "Supprimer les anciens essais"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « Le dépannage et la réparation ») attend détection, analyse, solution, réparation puis test et validation des améliorations.",
+      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») attend détection, analyse, solution, réparation puis test et validation des améliorations.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Le dépannage et la réparation » (3e)",
-      "contexte": "mecanique", "tags": ["depannage", "protocole"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "depannage",
+        "protocole"
+      ],
+      "score": 100
     },
     {
-      "id": "q055", "theme": "mecanique", "niveau": "5e", "difficulte": 1,
+      "id": "q055",
+      "theme": "mecanique",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel rôle joue un relais dans une chaîne d'énergie ?",
-      "options": ["Commander la mise sous tension d'un circuit", "Mesurer la température", "Stocker des données", "Éclairer la pièce"],
+      "options": [
+        "Commander la mise sous tension d'un circuit",
+        "Stocker des données",
+        "Mesurer la température",
+        "Commander la mise sous tension"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, connaissances de la chaîne d'énergie) donne au relais/interrupteur la fonction de contrôler le circuit.",
+      "explication": "Le programme (thème 2, connaissances de la chaîne d'énergie) donne au relais/interrupteur la fonction de contrôler le circuit.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : relais/interrupteur",
-      "contexte": "energie", "tags": ["relais", "commande"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "relais",
+        "commande"
+      ],
+      "score": 100
     },
     {
-      "id": "q056", "theme": "mecanique", "niveau": "4e", "difficulte": 1,
+      "id": "q056",
+      "theme": "mecanique",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quel est l'intérêt principal d'un assemblage démontable ?",
-      "options": ["Réduire le nombre de pièces", "Permettre la maintenance et le remplacement d'une pièce", "Supprimer les outils", "Augmenter la masse"],
+      "options": [
+        "Permettre la maintenance",
+        "Permettre la maintenance et le remplacement d'une pièce",
+        "Augmenter la masse",
+        "Supprimer les outils"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, indice de réparabilité, et thème 2, assemblages) relie le démontage à la réparation des OST.",
+      "explication": "Le programme (thème 1, indice de réparabilité, et thème 2, assemblages) relie le démontage à la réparation des OST.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, indice de réparabilité ; thème 2, assemblages",
-      "contexte": "mecanique", "tags": ["demontable", "maintenance"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "demontable",
+        "maintenance"
+      ],
+      "score": 100
     },
     {
-      "id": "q057", "theme": "mecanique", "niveau": "3e", "difficulte": 3,
+      "id": "q057",
+      "theme": "mecanique",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Quel engrenage augmente le couple au détriment de la vitesse ?",
-      "options": ["Un petit pignon entraînant une grande roue", "Une grande roue entraînant un petit pignon", "Une courroie croisée", "Un simple axe sans pignon"],
+      "options": [
+        "Un petit pignon entraînant une grande roue",
+        "Une grande roue entraînant un petit pignon",
+        "Une courroie croisée",
+        "Un simple axe sans pignon"
+      ],
       "answer": 0,
-      "explication": "Un réducteur de vitesse augmente le couple ; le BO n°9 du 29/02/2024 (thème 2) attend l'analyse des mécanismes de transmission et de transformation de mouvements.",
+      "explication": "Un réducteur de vitesse augmente le couple ; le programme (thème 2) attend l'analyse des mécanismes de transmission et de transformation de mouvements.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, mécanismes de transmission et de transformation",
-      "contexte": "mecanique", "tags": ["couple", "reducteur"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "couple",
+        "reducteur"
+      ],
+      "score": 100
     },
     {
-      "id": "q058", "theme": "mecanique", "niveau": "5e", "difficulte": 1,
+      "id": "q058",
+      "theme": "mecanique",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel signe visuel permet de repérer une pièce défectueuse en classe de 5e ?",
-      "options": ["Une fissure ou une déformation visible", "Une étiquette neuve", "Un emballage coloré", "Une notice bien lisible"],
+      "options": [
+        "Une fissure ou une déformation visible",
+        "Une fissure visible",
+        "Une déformation visible",
+        "Un emballage coloré"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, progressivité 5e) attend le repérage visuel d'une pièce défectueuse puis une réparation suivant un protocole fourni.",
+      "explication": "Le programme (thème 2, progressivité 5e) attend le repérage visuel d'une pièce défectueuse puis une réparation suivant un protocole fourni.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 5e : repérage visuel d'une pièce défectueuse",
-      "contexte": "mecanique", "tags": ["reperage", "5e"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "reperage",
+        "5e"
+      ],
+      "score": 100
     },
     {
-      "id": "q059", "theme": "mecanique", "niveau": "5e", "difficulte": 1,
+      "id": "q059",
+      "theme": "mecanique",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel rôle joue une chaîne dans un mécanisme ?",
-      "options": ["Transmettre un mouvement entre deux axes éloignés", "Stocker de l'énergie électrique", "Convertir la lumière en courant", "Chiffrer des données"],
+      "options": [
+        "Transmettre un mouvement entre deux axes éloignés",
+        "Convertir la lumière en courant",
+        "Stocker de l'énergie électrique",
+        "Transmettre un mouvement"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) classe la chaîne parmi les mécanismes de transmission de mouvements.",
+      "explication": "Le programme (thème 2) classe la chaîne parmi les mécanismes de transmission de mouvements.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : engrenages, courroies, chaînes",
-      "contexte": "mecanique", "tags": ["chaine", "transmission"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "chaine",
+        "transmission"
+      ],
+      "score": 100
     },
     {
-      "id": "q060", "theme": "mecanique", "niveau": "4e", "difficulte": 2,
+      "id": "q060",
+      "theme": "mecanique",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Après avoir réparé un OST, que faut-il faire pour valider l'amélioration ?",
-      "options": ["Le ranger immédiatement", "Tester le comportement et le comparer à celui attendu", "Modifier le cahier des charges", "Supprimer les anciens essais"],
+      "options": [
+        "Tester le comportement",
+        "Tester le comportement et le comparer à celui attendu",
+        "Le ranger immédiatement",
+        "Changer le besoin"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, « détecter, réparer puis tester et valider des améliorations ») fait de ce test une étape obligatoire.",
+      "explication": "Le programme (thème 2, « détecter, réparer puis tester et valider des améliorations ») fait de ce test une étape obligatoire.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
-      "contexte": "mecanique", "tags": ["validation", "reparation"], "score": 100
+      "contexte": "mecanique",
+      "tags": [
+        "validation",
+        "reparation"
+      ],
+      "score": 100
     },
     {
-      "id": "q061", "theme": "fluides", "niveau": "5e", "difficulte": 1,
+      "id": "q061",
+      "theme": "fluides",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel constituant transforme l'énergie d'un fluide sous pression en mouvement ?",
-      "options": ["Le vérin", "La batterie", "La lampe", "Le capteur"],
+      "options": [
+        "Le vérin",
+        "Le moteur",
+        "Le capteur",
+        "La lampe"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) cite le vérin dans les conversions d'énergie à connaître : l'énergie de pression devient un mouvement mécanique.",
+      "explication": "Le programme (thème 2) cite le vérin dans les conversions d'énergie à connaître : l'énergie de pression devient un mouvement mécanique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions (vérin)",
-      "contexte": "fluides", "tags": ["verin", "conversion"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "verin",
+        "conversion"
+      ],
+      "score": 100
     },
     {
-      "id": "q062", "theme": "fluides", "niveau": "4e", "difficulte": 2,
+      "id": "q062",
+      "theme": "fluides",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Dans un vérin pneumatique, quelle forme d'énergie est fournie en entrée ?",
-      "options": ["L'énergie lumineuse", "L'énergie de pression du fluide", "L'énergie chimique", "L'énergie sonore"],
+      "options": [
+        "L'énergie lumineuse",
+        "L'énergie de pression du fluide",
+        "L'énergie chimique",
+        "L'énergie sonore"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2) demande d'indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d'énergie.",
+      "explication": "Le programme (thème 2) demande d'indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d'énergie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 4e : énergies en entrée et sortie",
-      "contexte": "fluides", "tags": ["pneumatique", "energie_pression"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "pneumatique",
+        "energie_pression"
+      ],
+      "score": 100
     },
     {
-      "id": "q063", "theme": "fluides", "niveau": "4e", "difficulte": 2,
+      "id": "q063",
+      "theme": "fluides",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quelle grandeur mesure la quantité de fluide circulant par unité de temps ?",
-      "options": ["La masse", "La température", "Le débit", "La résistance électrique"],
+      "options": [
+        "Le débit",
+        "La résistance électrique",
+        "La pression",
+        "La température"
+      ],
       "answer": 2,
-      "explication": "Le BO n°9 du 29/02/2024 donne le débit comme grandeur et, pour la performance des OST, demande de choisir des grandeurs mesurables adaptées.",
+      "explication": "Le programme donne le débit comme grandeur et, pour la performance des OST, demande de choisir des grandeurs mesurables adaptées.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, débit et ordres de grandeur ; thème 1, grandeurs mesurables",
-      "contexte": "fluides", "tags": ["debit", "mesure"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "debit",
+        "mesure"
+      ],
+      "score": 100
     },
     {
-      "id": "q064", "theme": "fluides", "niveau": "5e", "difficulte": 2,
+      "id": "q064",
+      "theme": "fluides",
+      "niveau": "5e",
+      "difficulte": 2,
       "prompt": "Quel rôle joue une vanne dans un circuit fluidique ?",
-      "options": ["Contrôler le passage du fluide, donc l'énergie transmise", "Mesurer la couleur du fluide", "Stocker les données du programme", "Produire de la lumière"],
+      "options": [
+        "Contrôler le passage du fluide, donc l'énergie transmise",
+        "Mesurer la couleur du fluide",
+        "Stocker les données du programme",
+        "Produire de la lumière"
+      ],
       "answer": 0,
-      "explication": "Comme l'interrupteur/relais de la chaîne d'énergie, la vanne contrôle le transfert d'énergie : c'est une fonction de constituant attendue au thème 2 du BO n°9 du 29/02/2024.",
+      "explication": "Comme l'interrupteur/relais de la chaîne d'énergie, la vanne contrôle le transfert d'énergie : c'est une fonction de constituant attendue au thème 2 du programme.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, fonctions des constituants de la chaîne d'énergie",
-      "contexte": "fluides", "tags": ["vanne", "commande"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "vanne",
+        "commande"
+      ],
+      "score": 100
     },
     {
-      "id": "q065", "theme": "fluides", "niveau": "4e", "difficulte": 2,
+      "id": "q065",
+      "theme": "fluides",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quelle énergie est stockée dans de l'air comprimé ?",
-      "options": ["Une énergie potentielle de pression", "Une énergie lumineuse", "Une énergie nucléaire", "Une énergie chimique"],
+      "options": [
+        "Une énergie potentielle de pression",
+        "Une énergie lumineuse",
+        "Une énergie nucléaire",
+        "Une énergie chimique"
+      ],
       "answer": 0,
-      "explication": "L'air comprimé possède une énergie potentielle de pression, que le BO n°9 du 29/02/2024 (thème 2) range parmi les formes d'énergie à identifier dans une chaîne.",
+      "explication": "L'air comprimé possède une énergie potentielle de pression, que le programme (thème 2) range parmi les formes d'énergie à identifier dans une chaîne.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : formes d'énergie",
-      "contexte": "fluides", "tags": ["air_comprime", "energie_potentielle"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "air_comprime",
+        "energie_potentielle"
+      ],
+      "score": 100
     },
     {
-      "id": "q066", "theme": "fluides", "niveau": "4e", "difficulte": 2,
+      "id": "q066",
+      "theme": "fluides",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quels critères de performance mesurer pour une pompe ?",
-      "options": ["Le débit et la pression fournis", "La couleur du moteur", "Le nombre de vis du boîtier", "La taille de l'emballage"],
+      "options": [
+        "Le débit et la pression fournis",
+        "Le nombre de vis du boîtier",
+        "La durabilité",
+        "La couleur du moteur"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « La performance des OST ») attend le choix d'appareils de mesure et de grandeurs caractérisant une performance.",
+      "explication": "Le programme (thème 1, « La performance des OST ») attend le choix d'appareils de mesure et de grandeurs caractérisant une performance.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » (4e)",
-      "contexte": "fluides", "tags": ["pompe", "performance"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "pompe",
+        "performance"
+      ],
+      "score": 100
     },
     {
-      "id": "q067", "theme": "fluides", "niveau": "3e", "difficulte": 3,
+      "id": "q067",
+      "theme": "fluides",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Un compresseur consomme 1000 W et le vérin fournit 300 W de puissance utile. Quel est le rendement global ?",
-      "options": ["300 %", "30 %", "70 %", "1000 W"],
+      "options": [
+        "300 %",
+        "30 %",
+        "70 %",
+        "1000 W"
+      ],
       "answer": 1,
-      "explication": "Rendement = 300/1000 = 0,30. Le BO n°9 du 29/02/2024 et le guide de mai 2024 (§3.3) utilisent rendement et efficacité énergétique pour juger une conversion.",
+      "explication": "Rendement = 300/1000 = 0,30. Le programme et le utilisent rendement et efficacité énergétique pour juger une conversion.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
-      "contexte": "energie", "tags": ["rendement", "calcul"], "score": 100
+      "contexte": "energie",
+      "tags": [
+        "rendement",
+        "calcul"
+      ],
+      "score": 100
     },
     {
-      "id": "q068", "theme": "fluides", "niveau": "5e", "difficulte": 1,
+      "id": "q068",
+      "theme": "fluides",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel risque concret est lié à un fluide sous pression ?",
-      "options": ["Un jet haute pression ou une rupture de flexible", "Une surcharge mémoire", "Un mot de passe faible", "Une erreur de typographie"],
+      "options": [
+        "Un jet haute pression ou une rupture de flexible",
+        "Une surpression du circuit",
+        "Une rupture de flexible",
+        "Un jet haute pression"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2 et thème 3) impose les règles usuelles de sécurité et la prise en compte de la sécurité comme exigence de conception.",
+      "explication": "Le programme (thème 2 et thème 3) impose les règles usuelles de sécurité et la prise en compte de la sécurité comme exigence de conception.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, règles usuelles de sécurité ; thème 3, exigences",
-      "contexte": "securite", "tags": ["pression", "risque"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "pression",
+        "risque"
+      ],
+      "score": 100
     },
     {
-      "id": "q069", "theme": "fluides", "niveau": "3e", "difficulte": 3,
+      "id": "q069",
+      "theme": "fluides",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Comment valider la course d'un vérin avant sa fabrication ?",
-      "options": ["Par une simulation puis un test comparé au cahier des charges", "En changeant le besoin", "En supprimant les mesures", "En peignant le vérin"],
+      "options": [
+        "Par une simulation puis un test comparé au cahier des charges",
+        "En changeant le besoin",
+        "En supprimant les mesures",
+        "En peignant le vérin"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « Valider les solutions techniques par des simulations ou des protocoles de tests ») prévoit explicitement cette démarche.",
+      "explication": "Le programme (thème 3, « Valider les solutions techniques par des simulations ou des protocoles de tests ») prévoit explicitement cette démarche.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Valider les solutions techniques par des simulations ou des protocoles de tests »",
-      "contexte": "fluides", "tags": ["simulation", "validation"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "simulation",
+        "validation"
+      ],
+      "score": 100
     },
     {
-      "id": "q070", "theme": "fluides", "niveau": "4e", "difficulte": 2,
+      "id": "q070",
+      "theme": "fluides",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel effet observe-t-on si un circuit pneumatique fuit ?",
-      "options": ["La pression baisse et la force du vérin diminue", "La vitesse de rotation augmente", "Les données sont chiffrées", "La LED s'allume"],
+      "options": [
+        "La pression baisse et la force du vérin diminue",
+        "La vitesse de rotation augmente",
+        "Les données sont chiffrées",
+        "La LED s'allume"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, identifier un dysfonctionnement et y remédier) attend le lien entre perte d'énergie et baisse de performance.",
+      "explication": "Le programme (thème 2, identifier un dysfonctionnement et y remédier) attend le lien entre perte d'énergie et baisse de performance.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
-      "contexte": "fluides", "tags": ["fuite", "dysfonctionnement"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "fuite",
+        "dysfonctionnement"
+      ],
+      "score": 100
     },
     {
-      "id": "q071", "theme": "fluides", "niveau": "5e", "difficulte": 1,
+      "id": "q071",
+      "theme": "fluides",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Dans quelle unité se mesure couramment la pression ?",
-      "options": ["En pascal (Pa) ou en bar", "En bit", "En degré Celsius", "En mètre"],
+      "options": [
+        "En pascal (Pa) ou en bar",
+        "En pascal",
+        "En mètre",
+        "En bit"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 3, « Les instruments de mesure » ; thème 1, grandeurs mesurables) attend l'usage d'unités adaptées aux grandeurs mesurées.",
+      "explication": "Le programme (thème 3, « Les instruments de mesure » ; thème 1, grandeurs mesurables) attend l'usage d'unités adaptées aux grandeurs mesurées.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La modélisation et la fabrication », connaissances : instruments de mesure",
-      "contexte": "fluides", "tags": ["pression", "unite"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "pression",
+        "unite"
+      ],
+      "score": 100
     },
     {
-      "id": "q072", "theme": "fluides", "niveau": "3e", "difficulte": 2,
+      "id": "q072",
+      "theme": "fluides",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Pourquoi prendre en compte l'impact environnemental d'un fluide ?",
-      "options": ["Parce que ses rejets et son cycle de vie ont des incidences", "Parce qu'il change de couleur", "Parce qu'il occupe de la mémoire", "Parce qu'il rend le programme plus long"],
+      "options": [
+        "Parce que ses rejets et son cycle de vie ont des incidences",
+        "Parce qu'il change de couleur",
+        "Parce qu'il occupe de la mémoire",
+        "Parce qu'il rend le programme plus long"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1) fait des incidences environnementales et du cycle de vie des critères de choix ; le guide de mai 2024 (§3.3) souligne l'écoconception.",
+      "explication": "Le programme (thème 1) fait des incidences environnementales et du cycle de vie des critères de choix ; le souligne l'écoconception.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, impacts environnementaux ; guide mai 2024 §3.3",
-      "contexte": "fluides", "tags": ["environnement", "cycle_de_vie"], "score": 100
+      "contexte": "fluides",
+      "tags": [
+        "environnement",
+        "cycle_de_vie"
+      ],
+      "score": 100
     },
     {
-      "id": "q073", "theme": "securite", "niveau": "5e", "difficulte": 1,
+      "id": "q073",
+      "theme": "securite",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel réflexe avant d'utiliser une perceuse dans l'atelier ?",
-      "options": ["Mettre ses lunettes de protection et vérifier les consignes", "Retirer ses lunettes pour mieux voir", "Travailler sans surveillance", "Commencer sans consigne"],
+      "options": [
+        "Mettre ses lunettes de protection et vérifier les consignes",
+        "Travailler sans surveillance",
+        "Commencer sans consigne",
+        "Retirer ses lunettes"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2, règles usuelles de sécurité en atelier) attend les équipements de protection individuelle et la mise en œuvre sûre des moyens de réalisation.",
+      "explication": "Le programme (thème 2, règles usuelles de sécurité en atelier) attend les équipements de protection individuelle et la mise en œuvre sûre des moyens de réalisation.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : règles usuelles de sécurité et EPI",
-      "contexte": "securite", "tags": ["EPI", "atelier"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "EPI",
+        "atelier"
+      ],
+      "score": 100
     },
     {
-      "id": "q074", "theme": "securite", "niveau": "4e", "difficulte": 1,
+      "id": "q074",
+      "theme": "securite",
+      "niveau": "4e",
+      "difficulte": 1,
       "prompt": "Quel mot de passe est le plus sûr ?",
-      "options": ["123456", "Une phrase longue et unique, mémorisable, avec des caractères variés", "Le prénom de l'élève", "Le nom de l'école"],
+      "options": [
+        "123456",
+        "Une phrase longue et unique, mémorisable, avec des caractères variés",
+        "Le prénom de l'élève",
+        "Le nom de l'école"
+      ],
       "answer": 1,
-      "explication": "Le guide d'accompagnement de mai 2024 (§7.2) recommande de concevoir un mot de passe fort et de gérer ses multiples mots de passe, en lien avec le BO n°9 du 29/02/2024 (thème 1).",
+      "explication": "Le programme recommande de concevoir un mot de passe fort et de gérer ses multiples mots de passe.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, cybersécurité ; BO n°9 du 29/02/2024, thème 1",
-      "contexte": "terminal", "tags": ["mot_de_passe", "cybersecurite"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "mot_de_passe",
+        "cybersecurite"
+      ],
+      "score": 100
     },
     {
-      "id": "q075", "theme": "securite", "niveau": "4e", "difficulte": 2,
+      "id": "q075",
+      "theme": "securite",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Un e-mail demande votre mot de passe en urgence : quelle réaction est correcte ?",
-      "options": ["Le donner rapidement", "Vérifier l'expéditeur et ne jamais communiquer ses identifiants", "Répondre avec une capture d'écran", "Cliquer sur le lien sans le lire"],
+      "options": [
+        "Le donner rapidement",
+        "Vérifier l'expéditeur et ne jamais communiquer ses identifiants",
+        "Répondre avec une capture d'écran",
+        "Cliquer sur le lien sans le lire"
+      ],
       "answer": 1,
-      "explication": "Le guide de mai 2024 (§7.2) demande de reconnaître le phishing ou hameçonnage et de protéger son identité : c'est une attente du BO n°9 du 29/02/2024 (thème 1).",
+      "explication": "Le programme demande de reconnaître le phishing et de protéger son identité.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, phishing et usurpation ; BO n°9 du 29/02/2024, thème 1",
-      "contexte": "terminal", "tags": ["phishing", "identifiants"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "phishing",
+        "identifiants"
+      ],
+      "score": 100
     },
     {
-      "id": "q076", "theme": "securite", "niveau": "5e", "difficulte": 1,
+      "id": "q076",
+      "theme": "securite",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quelle trace numérique peut révéler les déplacements d'un utilisateur ?",
-      "options": ["La géolocalisation", "La résolution de l'écran", "La taille du disque", "Le nombre de ports USB"],
+      "options": [
+        "La géolocalisation",
+        "L'indice de réparabilité",
+        "La taille du disque",
+        "Le nombre de ports USB"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « Usages et impacts sociétaux du numérique ») cite les témoins de connexion et la géolocalisation comme traces numériques.",
+      "explication": "Le programme (thème 1, « Usages et impacts sociétaux du numérique ») cite les témoins de connexion et la géolocalisation comme traces numériques.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : traces numériques",
-      "contexte": "securite", "tags": ["geolocalisation", "traces"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "geolocalisation",
+        "traces"
+      ],
+      "score": 100
     },
     {
-      "id": "q077", "theme": "securite", "niveau": "4e", "difficulte": 2,
+      "id": "q077",
+      "theme": "securite",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quelle bonne pratique de sauvegarde est préconisée ?",
-      "options": ["Ne jamais sauvegarder", "Faire une copie régulière sur un support distinct", "Écraser l'original à chaque copie", "Stocker uniquement dans le navigateur"],
+      "options": [
+        "Écraser l'original",
+        "Faire une copie régulière sur un support distinct",
+        "Stocker uniquement dans le navigateur",
+        "Ne jamais sauvegarder"
+      ],
       "answer": 1,
-      "explication": "Le guide d'accompagnement de mai 2024 (§7.2, cybersécurité) liste les sauvegardes parmi les bonnes pratiques à enseigner, en lien avec le BO n°9 du 29/02/2024.",
+      "explication": "Le programme liste les sauvegardes parmi les bonnes pratiques à enseigner.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, bonnes pratiques de cybersécurité",
-      "contexte": "securite", "tags": ["sauvegarde", "donnees"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "sauvegarde",
+        "donnees"
+      ],
+      "score": 100
     },
     {
-      "id": "q078", "theme": "securite", "niveau": "3e", "difficulte": 2,
+      "id": "q078",
+      "theme": "securite",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel comportement respecte la propriété intellectuelle ?",
-      "options": ["Copier une image sans mention ni autorisation", "Utiliser une image sous licence compatible et citer la source", "Modifier un logo pour le vendre", "Partager un logiciel payant avec la classe"],
+      "options": [
+        "Modifier un logo pour le vendre",
+        "Utiliser une image sous licence compatible et citer la source",
+        "Partager un logiciel payant",
+        "Copier une image"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1) attend le respect de la propriété intellectuelle et des règles d'usage raisonné du numérique.",
+      "explication": "Le programme (thème 1) attend le respect de la propriété intellectuelle et des règles d'usage raisonné du numérique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « Usages et impacts sociétaux du numérique »",
-      "contexte": "securite", "tags": ["propriete_intellectuelle", "licence"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "propriete_intellectuelle",
+        "licence"
+      ],
+      "score": 100
     },
     {
-      "id": "q079", "theme": "securite", "niveau": "4e", "difficulte": 2,
+      "id": "q079",
+      "theme": "securite",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel signe peut indiquer une usurpation d'identité ?",
-      "options": ["Des messages envoyés depuis votre compte sans vous", "Une batterie déchargée", "Une lenteur du ventilateur", "Une couleur d'écran différente"],
+      "options": [
+        "Des messages envoyés depuis votre compte sans vous",
+        "Une lenteur du ventilateur",
+        "Une couleur d'écran différente",
+        "Une batterie déchargée"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, cyberviolence) cite l'usurpation d'identité ; le guide de mai 2024 (§7.2) demande de la repérer.",
+      "explication": "Le programme (thème 1, cyberviolence) cite l'usurpation d'identité ; le demande de la repérer.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : cyberviolence et usurpation d'identité",
-      "contexte": "securite", "tags": ["usurpation", "cyberviolence"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "usurpation",
+        "cyberviolence"
+      ],
+      "score": 100
     },
     {
-      "id": "q080", "theme": "securite", "niveau": "3e", "difficulte": 3,
+      "id": "q080",
+      "theme": "securite",
+      "niveau": "3e",
+      "difficulte": 3,
       "prompt": "Quelle est la différence entre identification et authentification ?",
-      "options": ["L'identification déclare une identité, l'authentification la vérifie", "Ce sont deux noms du même service", "L'authentification crée un compte, l'identification le supprime", "L'identification chiffre, l'authentification compresse"],
+      "options": [
+        "L'identification déclare une identité, l'authentification la vérifie",
+        "L'identification chiffre",
+        "L'identification déclare une identité",
+        "L'authentification vérifie"
+      ],
       "answer": 0,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, connaissances de cybersécurité) associe identification et authentification à la protection des données personnelles.",
+      "explication": "Le programme (thème 1, connaissances de cybersécurité) associe identification et authentification à la protection des données personnelles.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : identification et authentification",
-      "contexte": "terminal", "tags": ["authentification", "identite"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "authentification",
+        "identite"
+      ],
+      "score": 100
     },
     {
-      "id": "q081", "theme": "securite", "niveau": "5e", "difficulte": 1,
+      "id": "q081",
+      "theme": "securite",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "Quel réflexe face à un fichier inattendu reçu par messagerie ?",
-      "options": ["L'ouvrir immédiatement", "Ne pas l'ouvrir et vérifier la source avec un adulte ou le service informatique", "Le transférer à tous les camarades", "Le renommer pour le rendre sûr"],
+      "options": [
+        "Le transférer à tous",
+        "Ne pas l'ouvrir et vérifier la source avec un adulte ou le service informatique",
+        "Le renommer",
+        "L'ouvrir immédiatement"
+      ],
       "answer": 1,
-      "explication": "Le guide de mai 2024 (§7.2) recommande de sécuriser sa messagerie et de reconnaître les courriels indésirables, en lien avec le BO n°9 du 29/02/2024 (thème 1).",
+      "explication": "Le programme recommande de sécuriser sa messagerie et de reconnaître les courriels indésirables.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, messagerie et courriels indésirables",
-      "contexte": "securite", "tags": ["piece_jointe", "prevention"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "piece_jointe",
+        "prevention"
+      ],
+      "score": 100
     },
     {
-      "id": "q082", "theme": "securite", "niveau": "4e", "difficulte": 2,
+      "id": "q082",
+      "theme": "securite",
+      "niveau": "4e",
+      "difficulte": 2,
       "prompt": "Quel choix d'IHM améliore l'ergonomie d'un objet ?",
-      "options": ["Des boutons petits et non identifiés", "Des boutons lisibles, accessibles et cohérents avec l'usage", "Un affichage illisible mais coloré", "L'absence de retour d'information"],
+      "options": [
+        "Un affichage illisible",
+        "Des boutons lisibles, accessibles et cohérents avec l'usage",
+        "L'absence de retour",
+        "Des boutons petits"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 1, « L'OST dans son environnement ») attend l'ergonomie liée à l'usage et les composants d'interface humain-machine (thème 2).",
+      "explication": "Le programme (thème 1, « L'OST dans son environnement ») attend l'ergonomie liée à l'usage et les composants d'interface humain-machine (thème 2).",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « L'OST dans son environnement » ; thème 2, IHM",
-      "contexte": "securite", "tags": ["ergonomie", "IHM"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "ergonomie",
+        "IHM"
+      ],
+      "score": 100
     },
     {
-      "id": "q083", "theme": "securite", "niveau": "5e", "difficulte": 1,
+      "id": "q083",
+      "theme": "securite",
+      "niveau": "5e",
+      "difficulte": 1,
       "prompt": "En cas d'alerte incendie dans l'atelier, quelle action est conforme aux consignes ?",
-      "options": ["Continuer à manipuler", "Arrêter l'activité, prévenir et évacuer selon la consigne", "Éteindre soi-même sans prévenir", "Cacher le départ de feu"],
+      "options": [
+        "Éteindre soi-même",
+        "Arrêter l'activité, prévenir et évacuer selon la consigne",
+        "Cacher le départ de feu",
+        "Continuer à manipuler"
+      ],
       "answer": 1,
-      "explication": "Le BO n°9 du 29/02/2024 (thème 2 et thème 3) impose les règles usuelles de sécurité et la culture de prévention ; le guide de mai 2024 insiste sur la sécurité des personnes.",
+      "explication": "Le programme (thème 2 et thème 3) impose les règles usuelles de sécurité et la culture de prévention ; le insiste sur la sécurité des personnes.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2 et thème 3, règles usuelles de sécurité ; guide mai 2024 §7",
-      "contexte": "securite", "tags": ["evacuation", "prevention"], "score": 100
+      "contexte": "securite",
+      "tags": [
+        "evacuation",
+        "prevention"
+      ],
+      "score": 100
     },
     {
-      "id": "q084", "theme": "securite", "niveau": "3e", "difficulte": 2,
+      "id": "q084",
+      "theme": "securite",
+      "niveau": "3e",
+      "difficulte": 2,
       "prompt": "Quel est l'intérêt de chiffrer un fichier avant de l'envoyer ?",
-      "options": ["Réduire sa taille", "Protéger la confidentialité des données", "Changer son extension", "Supprimer les traces numériques"],
+      "options": [
+        "Changer son extension",
+        "Protéger la confidentialité des données",
+        "Supprimer les traces",
+        "Réduire sa taille"
+      ],
       "answer": 1,
-      "explication": "Le guide d'accompagnement de mai 2024 (§7.2) cite le chiffrement des fichiers comme bonne pratique de cybersécurité, en lien avec le thème 1 du BO n°9 du 29/02/2024.",
+      "explication": "Le programme cite le chiffrement des fichiers comme bonne pratique de cybersécurité.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, chiffrement ; BO n°9 du 29/02/2024, thème 1",
-      "contexte": "terminal", "tags": ["chiffrement", "confidentialite"], "score": 100
+      "contexte": "terminal",
+      "tags": [
+        "chiffrement",
+        "confidentialite"
+      ],
+      "score": 100
     }
   ]
 }
