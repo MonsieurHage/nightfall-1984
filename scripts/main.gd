@@ -11,6 +11,7 @@ var touch_ui: Node
 var current_level: Node = null
 var last_results: Dictionary = {}
 var _transitioning: bool = false
+var _autosave_timer: float = 0.0
 
 
 func _ready() -> void:
@@ -83,6 +84,11 @@ func _auto_capture(level: String, path: String) -> void:
 func _process(delta: float) -> void:
 	if Game.current_mission != "" and not ui.input_blocked():
 		Game.stats["elapsed"] = float(Game.stats.get("elapsed", 0.0)) + delta
+		_autosave_timer += delta
+		if _autosave_timer >= 20.0:
+			_autosave_timer = 0.0
+			_store_run_state()
+			Game.save_game()
 
 
 func start_mission(id: String, resume: Dictionary = {}) -> void:

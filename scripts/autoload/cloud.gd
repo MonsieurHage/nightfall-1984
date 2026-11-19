@@ -201,8 +201,7 @@ func save_progress() -> void:
 			"score": Game.score,
 			"xp": Game.xp,
 			"level": Game.level,
-			"save_data": data,
-			"updated_at": "now()"
+			"save_data": data
 		},
 		true,
 		{"Prefer": "return=minimal"})
