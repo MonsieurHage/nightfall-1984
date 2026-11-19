@@ -28,6 +28,12 @@ var codex_unlocked: Array[String] = []
 var completed_missions: Array[String] = []
 var unlocked_missions: Array[String] = ["alley"]
 var current_mission: String = ""
+## État de la partie en cours (mission, position, armes, vie) pour reprise en ligne.
+var run_state: Dictionary = {}
+## Apports des commandes tactiles (mobile / tablette).
+var touch_move: Vector2 = Vector2.ZERO
+var touch_look: Vector2 = Vector2.ZERO
+var is_touch: bool = false
 var stats: Dictionary = {"kills": 0, "shots": 0, "hits": 0, "deaths": 0, "elapsed": 0.0}
 var settings: Dictionary = {
 	"sensitivity": 0.0022, "invert_y": false,
@@ -59,25 +65,48 @@ static func load_json(path: String) -> Variant:
 	return parser.data
 
 
-func save_game() -> void:
-	var data := {
+## Toutes les données nécessaires pour reprendre exactement la partie.
+func build_save_data() -> Dictionary:
+	return {
 		"score": score, "xp": xp, "level": level, "memory_chips": memory_chips,
 		"total_questions": total_questions, "correct_questions": correct_questions,
 		"codex_unlocked": codex_unlocked, "completed_missions": completed_missions,
-		"unlocked_missions": unlocked_missions, "stats": stats, "settings": settings
+		"unlocked_missions": unlocked_missions, "stats": stats, "settings": settings,
+		"mission": current_mission, "run_state": run_state
 	}
+
+
+func save_game() -> void:
+	var data := build_save_data()
 	var f := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	if f:
 		f.store_string(JSON.stringify(data, "  "))
+	var cloud := get_node_or_null("/root/Cloud")
+	if cloud != null and cloud.has_method("queue_sync"):
+		cloud.queue_sync()
 
 
 func load_save() -> void:
 	if not FileAccess.file_exists(SAVE_PATH):
 		return
 	var d: Dictionary = load_json(SAVE_PATH)
-	if d.is_empty():
-		return
-	score = int(d.get("score", 0))
+	if not d.is_empty():
+		_apply_data(d)
+
+
+## Applique le profil téléchargé depuis Supabase (source de vérité en ligne).
+func apply_cloud_profile(profile: Dictionary) -> void:
+	var cloud_data: Dictionary = {}
+	if profile.get("save_data") is Dictionary:
+		cloud_data = (profile["save_data"] as Dictionary).duplicate(true)
+	cloud_data["score"] = int(profile.get("score", score))
+	cloud_data["xp"] = int(profile.get("xp", xp))
+	cloud_data["level"] = maxi(1, int(profile.get("level", level)))
+	_apply_data(cloud_data)
+
+
+func _apply_data(d: Dictionary) -> void:
+	score = maxi(0, int(d.get("score", 0)))
 	xp = int(d.get("xp", 0))
 	level = maxi(1, int(d.get("level", 1)))
 	memory_chips = int(d.get("memory_chips", 0))
@@ -96,8 +125,15 @@ func load_save() -> void:
 		unlocked_missions.clear()
 		for v in unlocked:
 			unlocked_missions.append(String(v))
-	stats = d.get("stats", stats)
-	var s = d.get("settings", {})
+	if d.get("stats") is Dictionary:
+		stats = d["stats"] as Dictionary
+	current_mission = String(d.get("mission", current_mission))
+	run_state = {}
+	if d.get("run_state") is Dictionary:
+		run_state = (d["run_state"] as Dictionary).duplicate(true)
+	var s: Dictionary = {}
+	if d.get("settings") is Dictionary:
+		s = d["settings"] as Dictionary
 	for k in s.keys():
 		if settings.has(k):
 			settings[k] = s[k]
@@ -292,5 +328,7 @@ func reset_run() -> void:
 	codex_unlocked.clear()
 	completed_missions.clear()
 	unlocked_missions = ["alley"]
+	current_mission = ""
+	run_state.clear()
 	stats = {"kills": 0, "shots": 0, "hits": 0, "deaths": 0, "elapsed": 0.0}
 	save_game()

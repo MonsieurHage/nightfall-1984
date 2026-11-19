@@ -6,6 +6,8 @@ class_name Main
 var world: Node3D
 var player: Node
 var ui: Node
+var cloud_ui: Node
+var touch_ui: Node
 var current_level: Node = null
 var last_results: Dictionary = {}
 var _transitioning: bool = false
@@ -38,7 +40,19 @@ func _ready() -> void:
 	ui.restart_requested.connect(restart_level)
 	ui.menu_requested.connect(to_menu)
 
+	cloud_ui = load("res://scripts/ui/cloud_ui.gd").new()
+	cloud_ui.name = "CloudUI"
+	add_child(cloud_ui)
+	cloud_ui.login_succeeded.connect(_on_login_succeeded)
+
+	Game.is_touch = OS.has_feature("mobile") or DisplayServer.is_touchscreen_available()
+	if Game.is_touch:
+		touch_ui = load("res://scripts/ui/touch_controls.gd").new()
+		touch_ui.name = "TouchControls"
+		add_child(touch_ui)
+
 	ui.show_main_menu()
+	ui.set_account(Cloud.pseudo if Cloud.signed_in else "")
 	Audio.play_music("menu")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	var level_to_test := ""
@@ -71,7 +85,7 @@ func _process(delta: float) -> void:
 		Game.stats["elapsed"] = float(Game.stats.get("elapsed", 0.0)) + delta
 
 
-func start_mission(id: String) -> void:
+func start_mission(id: String, resume: Dictionary = {}) -> void:
 	if _transitioning or not Missions.missions.has(id):
 		return
 	_transitioning = true
@@ -91,14 +105,57 @@ func start_mission(id: String) -> void:
 	player.teleport(current_level.spawn, current_level.spawn_yaw)
 	player.health = player.max_health
 	player.alive = true
+	if not resume.is_empty():
+		player.restore_state(resume)
 	Game.health_changed.emit(player.health, player.max_health)
 	Missions.start(id)
 	Audio.play_music("boss" if id == "core" else id)
 	ui.show_hud()
 	ui.set_objectives(Missions.objective_text())
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	if not Game.is_touch:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	_store_run_state()
+	Game.save_game()
 	ui.fade_to(0.0, 0.6)
 	_transitioning = false
+
+
+## Enregistre la position et l'état du joueur dans la sauvegarde de la session.
+func _store_run_state() -> void:
+	if player == null or Game.current_mission == "":
+		return
+	Game.run_state = player.capture_state()
+	Game.run_state["mission"] = Game.current_mission
+
+
+## Reprend exactement la partie sauvegardée (locale ou Supabase).
+func resume_game() -> void:
+	var mission := String(Game.run_state.get("mission", Game.current_mission))
+	if mission == "" or not Missions.missions.has(mission):
+		Game.notify("AUCUNE PARTIE À REPRENDRE — NOUVELLE MISSION", 3.5)
+		start_mission("alley")
+		return
+	start_mission(mission, Game.run_state)
+
+
+func _on_login_succeeded(p: String) -> void:
+	ui.show_main_menu()
+	ui.set_account(p)
+	var saved_mission := String(Game.run_state.get("mission", ""))
+	if saved_mission != "" and Missions.missions.has(saved_mission):
+		Game.notify("RECONNEXION : REPRISE DE " + saved_mission.to_upper(), 4.5)
+		await get_tree().create_timer(0.5).timeout
+		resume_game()
+	else:
+		Game.notify("CONNECTÉ : " + p, 4.0)
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST or what == NOTIFICATION_APPLICATION_PAUSED:
+		_store_run_state()
+		Game.save_game()
+		if Cloud.signed_in:
+			Cloud.save_progress()
 
 
 func restart_level() -> void:
@@ -121,6 +178,10 @@ func to_menu() -> void:
 
 func _on_mission_completed(_id: String, results: Dictionary) -> void:
 	last_results = results
+	_store_run_state()
+	Game.save_game()
+	if Cloud.signed_in:
+		Cloud.save_progress()
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	ui.show_results(results)
 

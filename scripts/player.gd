@@ -172,6 +172,53 @@ func teleport(pos: Vector3, yaw: float = 0.0) -> void:
 		camera.rotation.x = 0.0
 
 
+## État complet du joueur, sérialisé dans la sauvegarde en ligne.
+func capture_state() -> Dictionary:
+	var p := global_position
+	return {
+		"pos": [p.x, p.y, p.z],
+		"yaw": rotation.y,
+		"pitch": camera.rotation.x if camera else 0.0,
+		"weapon": weapon_index,
+		"unlocked_weapons": unlocked_weapons,
+		"ammo": [ammo[0], ammo[1], ammo[2]],
+		"reserve": [reserve[0], reserve[1], reserve[2]],
+		"health": health,
+		"alive": alive
+	}
+
+
+## Restaure l'état après reconnexion (remplace le spawn du niveau).
+func restore_state(d: Dictionary) -> void:
+	if d.is_empty():
+		return
+	var arr: Array = d.get("pos", [])
+	if arr.size() == 3:
+		global_position = Vector3(float(arr[0]), float(arr[1]), float(arr[2]))
+		spawn_point = global_position
+	velocity = Vector3.ZERO
+	rotation.y = float(d.get("yaw", rotation.y))
+	if camera:
+		camera.rotation.x = clampf(float(d.get("pitch", 0.0)), -1.45, 1.45)
+	unlocked_weapons = clampi(int(d.get("unlocked_weapons", 1)), 1, WEAPONS.size())
+	var a: Array = d.get("ammo", [])
+	var r: Array = d.get("reserve", [])
+	for i in range(ammo.size()):
+		if i < a.size():
+			ammo[i] = maxi(0, int(a[i]))
+		if i < r.size():
+			reserve[i] = maxi(0, int(r[i]))
+	health = clampf(float(d.get("health", max_health)), 1.0, max_health)
+	alive = bool(d.get("alive", true))
+	_equip(clampi(int(d.get("weapon", 0)), 0, unlocked_weapons - 1))
+	Game.health_changed.emit(health, max_health)
+
+
+func cycle_weapon() -> void:
+	var count := clampi(unlocked_weapons, 1, WEAPONS.size())
+	_equip((weapon_index + 1) % count)
+
+
 func _input(event: InputEvent) -> void:
 	if not alive or blocked():
 		return
@@ -195,7 +242,19 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		return
 
+	# Regard tactile (mobile / tablette) : consomme le delta accumule par l'UI.
+	var look := Game.touch_look
+	if look != Vector2.ZERO:
+		Game.touch_look = Vector2.ZERO
+		var sens_t: float = float(Game.settings.get("sensitivity", 0.0022)) * 1.6
+		rotation.y -= look.x * sens_t
+		var inv_t := -1.0 if bool(Game.settings.get("invert_y", false)) else 1.0
+		if camera:
+			camera.rotation.x = clampf(camera.rotation.x - look.y * sens_t * inv_t, -1.45, 1.45)
+
 	var input := Input.get_vector("move_left", "move_right", "move_back", "move_forward")
+	if Game.touch_move.length() > 0.05:
+		input = Game.touch_move
 	crouching = Input.is_action_pressed("crouch")
 	sprinting = Input.is_action_pressed("sprint") and input.length() > 0.1 and not crouching
 	var speed := 4.4

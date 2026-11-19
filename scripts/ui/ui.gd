@@ -44,6 +44,7 @@ var notif_timer: float = 0.0
 var font_main: Font
 var font_title: Font
 var ping_timer: float = 0.0
+var account_label: Label
 
 
 func _ready() -> void:
@@ -353,17 +354,38 @@ func _build_main_menu() -> void:
 	sub.offset_bottom = 290
 	_label(menu_panel, "FPS PÉDAGOGIQUE — PROGRAMME TECHNOLOGIE CYCLE 4 (BO 29/02/2024)",
 		0, 305, 1600, 40, 20, Color(0.65, 0.78, 0.9), HORIZONTAL_ALIGNMENT_CENTER)
-	_button(menu_panel, "NOUVELLE MISSION", 590, 400, 420, 60, Callable(self, "_on_new_game"), Color(1, 0.2, 0.2, 0.9))
-	_button(menu_panel, "CHOISIR UN ENVIRONNEMENT", 590, 478, 420, 60, Callable(self, "_on_mission_select"))
-	_button(menu_panel, "MODE PROFESSEUR / BILAN", 590, 556, 420, 60, Callable(self, "_on_teacher"))
-	_button(menu_panel, "QUITTER", 590, 634, 420, 60, Callable(self, "_on_quit"), Color(0.6, 0.6, 0.6, 0.9))
+	account_label = _label(menu_panel, "", 0, 348, 1600, 34, 20,
+		Color(0.35, 0.95, 0.6), HORIZONTAL_ALIGNMENT_CENTER)
+	_button(menu_panel, "REPRENDRE MA PARTIE", 590, 390, 420, 56, Callable(self, "_on_resume"),
+		Color(0.15, 0.75, 0.4, 0.9))
+	_button(menu_panel, "NOUVELLE MISSION", 590, 460, 420, 56, Callable(self, "_on_new_game"), Color(1, 0.2, 0.2, 0.9))
+	_button(menu_panel, "CHOISIR UN ENVIRONNEMENT", 590, 530, 420, 56, Callable(self, "_on_mission_select"))
+	_button(menu_panel, "COMPTE / CLASSEMENT", 590, 600, 420, 56, Callable(self, "_on_account"),
+		Color(0.6, 0.4, 1.0, 0.9))
+	_button(menu_panel, "MODE PROFESSEUR / BILAN", 590, 670, 420, 56, Callable(self, "_on_teacher"))
+	_button(menu_panel, "QUITTER", 590, 740, 420, 52, Callable(self, "_on_quit"), Color(0.6, 0.6, 0.6, 0.9))
 	_label(menu_panel, "ZQSD déplacer • Souris viser • Clic tirer • E interagir • Ctrl se baisser • Q spécial • Tab codex • Échap pause",
-		0, 800, 1600, 40, 18, Color(0.55, 0.7, 0.8), HORIZONTAL_ALIGNMENT_CENTER)
+		0, 840, 1600, 36, 18, Color(0.55, 0.7, 0.8), HORIZONTAL_ALIGNMENT_CENTER)
 
 
 func _on_new_game() -> void:
 	Game.reset_run()
 	Game.main.start_mission("alley")
+
+
+func set_account(p: String) -> void:
+	if account_label:
+		account_label.text = ("AGENT CONNECTÉ : " + p) if p != "" else "MODE HORS-LIGNE — CONNECTEZ-VOUS POUR SAUVEGARDER"
+
+
+func _on_account() -> void:
+	if Game.main and Game.main.cloud_ui:
+		Game.main.cloud_ui.show_auth()
+
+
+func _on_resume() -> void:
+	if Game.main:
+		Game.main.resume_game()
 
 
 func _on_mission_select() -> void:
@@ -384,6 +406,7 @@ func _on_quit() -> void:
 func show_main_menu() -> void:
 	hide_all()
 	menu_panel.visible = true
+	set_account(Cloud.pseudo if Cloud.signed_in else "")
 	_refresh_stats()
 
 

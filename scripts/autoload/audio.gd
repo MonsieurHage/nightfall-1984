@@ -55,17 +55,22 @@ func stream(path: String) -> AudioStream:
 func sfx_stream(name: String) -> AudioStream:
 	if sfx_cache.has(name):
 		return sfx_cache[name]
-	var s := stream("res://assets/audio/sfx_%s.wav" % name)
+	# Sur Web on privilégie l'OGG (8 Mo au lieu de 72 Mo de WAV).
+	var ext := "ogg" if OS.has_feature("web") else "wav"
+	var s := stream("res://assets/audio/sfx_%s.%s" % [name, ext])
 	if s == null:
-		s = stream("res://assets/audio/sfx_%s.ogg" % name)
+		var fallback := "wav" if ext == "ogg" else "ogg"
+		s = stream("res://assets/audio/sfx_%s.%s" % [name, fallback])
 	sfx_cache[name] = s
 	return s
 
 
 func play_music(name: String, fade: float = 1.2) -> void:
-	var s := stream("res://assets/audio/music_%s.wav" % name)
+	var ext := "ogg" if OS.has_feature("web") else "wav"
+	var s := stream("res://assets/audio/music_%s.%s" % [name, ext])
 	if s == null:
-		s = stream("res://assets/audio/music_%s.ogg" % name)
+		var fallback := "wav" if ext == "ogg" else "ogg"
+		s = stream("res://assets/audio/music_%s.%s" % [name, fallback])
 	if s == null:
 		return
 	if current_music == name and active_music.playing:

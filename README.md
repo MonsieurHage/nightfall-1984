@@ -13,6 +13,17 @@ rétrécissant, boss, et bornes de QCM contextuelles qui débloquent l'environne
 
 ---
 
+## 🌐 Jouer en ligne (PC / tablette / mobile)
+
+**URL :** https://monsieurhage.github.io/nightfall-1984/
+
+Le build Web est embarqué dans `docs/` et servi par GitHub Pages. Il utilise le renderer
+**Compatibility (WebGL2)** pour fonctionner sur navigateur, avec manette tactile automatique
+sur mobile/tablette. Les comptes, la sauvegarde et le classement passent par Supabase :
+voir [`docs/SUPABASE.md`](docs/SUPABASE.md) pour la configuration (à faire une seule fois).
+
+---
+
 ## 1. Lancer le jeu
 
 ### Prérequis
