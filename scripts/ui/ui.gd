@@ -452,17 +452,21 @@ func _back_to_menu() -> void:
 # ------------------------------------------------------------------ QCM
 func _build_quiz() -> void:
 	quiz_panel = _panel(root, "Quiz", 0, 0, 0, 0, true, Color(0.005, 0.01, 0.02, 0.97))
-	var inner := _panel(quiz_panel, "QuizBox", 260, 90, 1080, 720, false,
+	var inner := _panel(quiz_panel, "QuizBox", 260, 90, 1080, 760, false,
 		Color(0.02, 0.05, 0.09, 0.98))
 	quiz_title = _label(inner, "BORNE PÉDAGOGIQUE — BO TECHNOLOGIE", 20, 16, 1040, 46, 26,
 		Color(0.25, 0.9, 1.0), HORIZONTAL_ALIGNMENT_LEFT, true)
-	quiz_question = _label(inner, "", 20, 78, 1040, 150, 29, Color.WHITE)
+	quiz_question = _label(inner, "", 20, 74, 1040, 150, 27, Color.WHITE)
+	quiz_question.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	quiz_question.vertical_alignment = VERTICAL_ALIGNMENT_TOP
 	for i in range(4):
-		var b := _button(inner, "", 20, 240 + i * 84, 1040, 68,
+		var b := _button(inner, "", 20, 236 + i * 82, 1040, 64,
 			Callable(self, "_answer_%d" % i))
 		quiz_buttons.append(b)
-	quiz_feedback = _label(inner, "", 20, 590, 1040, 90, 20, Color(0.7, 0.9, 1.0))
-	quiz_continue = _button(inner, "CONTINUER", 790, 650, 270, 54, Callable(self, "_close_quiz"))
+	quiz_feedback = _label(inner, "", 20, 556, 1040, 126, 18, Color(0.7, 0.9, 1.0))
+	quiz_feedback.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	quiz_feedback.vertical_alignment = VERTICAL_ALIGNMENT_TOP
+	quiz_continue = _button(inner, "CONTINUER", 790, 694, 270, 54, Callable(self, "_close_quiz"))
 	quiz_continue.visible = false
 	quiz_panel.visible = false
 
@@ -515,7 +519,7 @@ func _close_quiz() -> void:
 		b.modulate = Color.WHITE
 	current_question = {}
 	if Game.current_mission != "" and not input_blocked():
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		Game.main.capture_mouse()
 
 
 # ------------------------------------------------------------------ CODEX
@@ -541,7 +545,7 @@ func toggle_codex() -> void:
 	if codex_panel.visible:
 		codex_panel.visible = false
 		if Game.current_mission != "" and not input_blocked():
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			Game.main.capture_mouse()
 		return
 	for c in codex_container.get_children():
 		c.queue_free()
@@ -598,7 +602,7 @@ func toggle_pause() -> void:
 	if pause_panel.visible:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	elif not input_blocked():
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		Game.main.capture_mouse()
 
 
 func _input(event: InputEvent) -> void:

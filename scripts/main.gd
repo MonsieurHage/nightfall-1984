@@ -46,7 +46,9 @@ func _ready() -> void:
 	add_child(cloud_ui)
 	cloud_ui.login_succeeded.connect(_on_login_succeeded)
 
-	Game.is_touch = OS.has_feature("mobile") or DisplayServer.is_touchscreen_available()
+	# Un PC Windows avec écran tactile reste un usage souris/clavier : on n'active
+	# la manette tactile que sur mobile ou sur le Web tactile (tablette/iPad).
+	Game.is_touch = OS.has_feature("mobile") or (OS.has_feature("web") and DisplayServer.is_touchscreen_available())
 	if Game.is_touch:
 		touch_ui = load("res://scripts/ui/touch_controls.gd").new()
 		touch_ui.name = "TouchControls"
@@ -137,12 +139,26 @@ func start_mission(id: String, resume: Dictionary = {}) -> void:
 	Audio.play_music("boss" if id == "core" else id)
 	ui.show_hud()
 	ui.set_objectives(Missions.objective_text())
-	if not Game.is_touch:
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	capture_mouse()
 	_store_run_state()
 	Game.save_game()
 	ui.fade_to(0.0, 0.6)
 	_transitioning = false
+
+
+## Verrouille le curseur, y compris sur le Web où le navigateur exige parfois
+## un requestPointerLock explicite (sinon la souris ne fait plus tourner la caméra).
+func capture_mouse() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	if OS.has_feature("web"):
+		JavaScriptBridge.eval("""
+		(function(){
+		  var c = document.querySelector('canvas');
+		  if (!c || !c.requestPointerLock || document.pointerLockElement === c) return;
+		  try { var p = c.requestPointerLock(); if (p && p.catch) p.catch(function(){}); }
+		  catch (e) {}
+		})();
+		""")
 
 
 ## Enregistre la position et l'état du joueur dans la sauvegarde de la session.

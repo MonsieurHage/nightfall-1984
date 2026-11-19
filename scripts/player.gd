@@ -40,6 +40,8 @@ var spawn_point: Vector3 = Vector3.ZERO
 var collision_shape: CollisionShape3D
 var _base_eye: float = 1.62
 var _current_interactable: Node = null
+var _last_mouse_pos: Vector2 = Vector2.ZERO
+var _have_mouse_pos: bool = false
 
 
 func _ready() -> void:
@@ -222,11 +224,36 @@ func cycle_weapon() -> void:
 func _input(event: InputEvent) -> void:
 	if not alive or blocked():
 		return
-	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		var sens: float = float(Game.settings.get("sensitivity", 0.0022))
-		rotation.y -= event.relative.x * sens
-		var inv := -1.0 if bool(Game.settings.get("invert_y", false)) else 1.0
-		camera.rotation.x = clampf(camera.rotation.x - event.relative.y * sens * inv, -1.45, 1.45)
+	if event is InputEventMouseMotion:
+		var m := event as InputEventMouseMotion
+		var captured := Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
+		var delta := m.relative
+		if not captured:
+			# Sur le Web, le pointer lock peut être refusé : on utilise alors
+			# le déplacement de position pour continuer à viser à la souris.
+			if _have_mouse_pos:
+				delta = m.position - _last_mouse_pos
+			_last_mouse_pos = m.position
+			_have_mouse_pos = true
+		else:
+			_have_mouse_pos = false
+		if delta != Vector2.ZERO:
+			_apply_look(delta)
+	elif event is InputEventMouseButton:
+		var mb := event as InputEventMouseButton
+		if (mb.pressed and mb.button_index == MOUSE_BUTTON_LEFT
+				and Game.current_mission != ""
+				and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED and Game.main):
+			# Un clic dans le jeu redemande le verrouillage du curseur.
+			Game.main.capture_mouse()
+
+
+func _apply_look(delta: Vector2) -> void:
+	var sens: float = float(Game.settings.get("sensitivity", 0.0022))
+	rotation.y -= delta.x * sens
+	var inv := -1.0 if bool(Game.settings.get("invert_y", false)) else 1.0
+	if camera:
+		camera.rotation.x = clampf(camera.rotation.x - delta.y * sens * inv, -1.45, 1.45)
 
 
 func blocked() -> bool:
