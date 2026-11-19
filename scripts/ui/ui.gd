@@ -45,6 +45,7 @@ var font_main: Font
 var font_title: Font
 var ping_timer: float = 0.0
 var account_label: Label
+var _fade_at: float = 0.0
 
 
 func _ready() -> void:
@@ -108,6 +109,7 @@ func show_hud() -> void:
 func fade_to(alpha: float, duration: float = 0.4) -> void:
 	if fade_rect == null:
 		return
+	_fade_at = Time.get_ticks_msec() / 1000.0
 	var t := create_tween()
 	t.tween_property(fade_rect, "color:a", alpha, duration)
 
@@ -263,6 +265,13 @@ func _process(delta: float) -> void:
 			notif_label.text = ""
 	if ping_timer > 0.0:
 		ping_timer -= delta
+	# Garde-fou : un voile noir oublié après une transition longue est relâché.
+	if fade_rect and fade_rect.color.a > 0.95:
+		var transitioning := false
+		if Game.main != null:
+			transitioning = bool(Game.main.get("_transitioning"))
+		if not transitioning and Time.get_ticks_msec() / 1000.0 - _fade_at > 4.0:
+			fade_to(0.0, 0.35)
 
 
 func _on_health(value: float, maximum: float) -> void:

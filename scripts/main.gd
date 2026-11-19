@@ -52,7 +52,26 @@ func _ready() -> void:
 		touch_ui.name = "TouchControls"
 		add_child(touch_ui)
 
-	ui.show_main_menu()
+	# Sécurité Web : si le contexte WebGL est perdu après une longue session,
+	# on recharge automatiquement la page plutôt que de rester sur écran noir.
+	if OS.has_feature("web"):
+		JavaScriptBridge.eval("""
+		(function(){
+		  var c = document.querySelector('canvas');
+		  if (!c) return;
+		  c.addEventListener('webglcontextlost', function(e){
+		    e.preventDefault();
+		    setTimeout(function(){ location.reload(); }, 1500);
+		  });
+		})();
+		""")
+
+	# Accueil = connexion / création de compte. On n'entre dans le menu que
+	# si le joueur est deja authentifie ou choisit de jouer sans compte.
+	if Cloud.signed_in:
+		ui.show_main_menu()
+	else:
+		cloud_ui.show_auth()
 	ui.set_account(Cloud.pseudo if Cloud.signed_in else "")
 	Audio.play_music("menu")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

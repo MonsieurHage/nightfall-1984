@@ -18,6 +18,7 @@ var signout_button: Button
 var font_main: Font
 var font_title: Font
 var _busy: bool = false
+var _board_from_auth: bool = false
 
 
 func _ready() -> void:
@@ -151,7 +152,7 @@ func _build_auth() -> void:
 	signout_button = _button(auth_panel, "SE DÉCONNECTER", 78, 534, 290, 52,
 		Callable(self, "_do_sign_out"), Color(0.8, 0.3, 0.3, 0.9))
 	signout_button.visible = false
-	_button(auth_panel, "RETOUR / JOUER SANS COMPTE", 390, 534, 292, 52, Callable(self, "hide"))
+	_button(auth_panel, "JOUER SANS COMPTE", 390, 534, 292, 52, Callable(self, "_skip"))
 	_label(auth_panel, "La sauvegarde en ligne est active dès la connexion.", 24, 610, 668, 30,
 		17, Color(0.55, 0.7, 0.82), HORIZONTAL_ALIGNMENT_CENTER)
 
@@ -171,7 +172,7 @@ func _build_board() -> void:
 	board_list.add_theme_constant_override("separation", 6)
 	scroll.add_child(board_list)
 	board_panel.add_child(scroll)
-	_button(board_panel, "RETOUR", 268, 646, 284, 52, Callable(self, "hide"))
+	_button(board_panel, "RETOUR", 268, 646, 284, 52, Callable(self, "_board_back"))
 
 
 func show_auth() -> void:
@@ -184,12 +185,26 @@ func show_auth() -> void:
 
 
 func show_board() -> void:
+	_board_from_auth := auth_panel.visible
 	hide()
 	visible = true
 	board_panel.visible = true
 	_render_placeholder()
 	if Cloud.configured:
 		Cloud.fetch_leaderboard()
+
+
+func _board_back() -> void:
+	if _board_from_auth:
+		show_auth()
+	else:
+		hide()
+
+
+func _skip() -> void:
+	hide()
+	if Game.ui:
+		Game.ui.show_main_menu()
 
 
 func _render_placeholder() -> void:
