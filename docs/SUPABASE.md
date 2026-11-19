@@ -30,6 +30,8 @@ Puis `git commit` + `git push` (le build Web embarque ce fichier).
 
 ## 3. Créer les tables et règles (SQL Editor → New query)
 
+Un fichier prêt à copier est disponible ici : [`docs/setup.sql`](setup.sql).
+
 ```sql
 -- Table des profils publics (id = uuid du compte Supabase, sous forme texte)
 create table if not exists public.profiles (
