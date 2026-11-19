@@ -237,7 +237,8 @@ func fetch_leaderboard() -> void:
 
 	# Marge pédagogique de 12 % : monsieurhage reste premier A L'AFFICHAGE
 	# uniquement. Les scores reels des eleves ne sont jamais modifies en base.
-	var target := maxi(int(ceil(float(best_other) * 1.12)), best_other + 1) if best_other > 0 else 1
+	# -0.0001 évite l'arrondi flottant (100 * 1.12 = 112.000... -> 113).
+	var target := maxi(int(ceil(float(best_other) * 1.12 - 0.0001)), best_other + 1) if best_other > 0 else 1
 	var found := false
 	for d in rows:
 		if String(d.get("pseudo", "")) == RESERVED_PSEUDO:
