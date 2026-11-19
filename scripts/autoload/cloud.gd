@@ -81,7 +81,10 @@ func _request(method: int, path: String, body: Variant = null, authenticated: bo
 		return {"ok": false, "code": 0, "error": "Requête impossible (codeGodot=%d)" % err}
 	var result: Array = await req.request_completed
 	req.queue_free()
-	var code := int(result[0])
+	# result[0] = RESULT_SUCCESS (0), result[1] = vrai code HTTP (200, 401, ...)
+	if int(result[0]) != HTTPRequest.RESULT_SUCCESS:
+		return {"ok": false, "code": int(result[0]), "error": "Échec réseau (résultat %d)" % int(result[0])}
+	var code := int(result[1])
 	var text := ""
 	if result[3] is PackedByteArray:
 		text = (result[3] as PackedByteArray).get_string_from_utf8()
