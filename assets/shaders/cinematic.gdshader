@@ -2,7 +2,7 @@ shader_type canvas_item;
 render_mode blend_mul;
 
 // Vignettage cinématographique + grain d'argentique léger (1984).
-uniform float vignette_strength : hint_range(0.0, 1.5) = 0.45;
+uniform float vignette_strength : hint_range(0.0, 1.5) = 0.30;
 uniform float grain_strength : hint_range(0.0, 0.15) = 0.015;
 
 void fragment() {

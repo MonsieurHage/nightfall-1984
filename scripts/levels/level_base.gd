@@ -40,12 +40,12 @@ func _setup_environment() -> void:
 	env.background_mode = Environment.BG_COLOR
 	env.background_color = Color(0.05, 0.07, 0.10)
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	env.ambient_light_color = Color(0.32, 0.38, 0.50)
-	env.ambient_light_energy = 1.6
+	env.ambient_light_color = Color(0.45, 0.52, 0.65)
+	env.ambient_light_energy = 2.2
 	env.fog_enabled = true
 	env.fog_mode = Environment.FOG_MODE_EXPONENTIAL
-	env.fog_density = 0.006
-	env.fog_light_color = Color(0.10, 0.14, 0.20)
+	env.fog_density = 0.003
+	env.fog_light_color = Color(0.18, 0.24, 0.32)
 	env.glow_enabled = true
 	env.glow_intensity = 0.7
 	env.glow_bloom = 0.25
@@ -55,13 +55,13 @@ func _setup_environment() -> void:
 	env.adjustment_enabled = true
 	env.adjustment_contrast = 1.05
 	env.adjustment_saturation = 1.04
-	env.adjustment_brightness = 1.18
+	env.adjustment_brightness = 1.32
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)
 	var moon := DirectionalLight3D.new()
 	moon.light_color = Color(0.62, 0.78, 1.0)
-	moon.light_energy = 1.1
+	moon.light_energy = 1.6
 	moon.shadow_enabled = true
 	moon.rotation_degrees = Vector3(-38, 24, 0)
 	add_child(moon)
