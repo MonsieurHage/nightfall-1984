@@ -58,7 +58,7 @@
         "Quel budget prévoir pour le projet ?"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 3) fait commencer la démarche de projet par l'analyse du besoin, avant les choix de solutions. C'est un attendu de la classe de 5e.",
+      "explication": "La démarche commence par l'analyse du besoin avant le choix de solutions.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Imaginer, concevoir et réaliser » (5e)",
       "contexte": "projet",
       "tags": [
@@ -81,7 +81,7 @@
         "Le diagramme de planification"
       ],
       "answer": 0,
-      "explication": "Le cahier des charges formalise exigences et contraintes : c'est une connaissance du thème 3 du programme et un attendu de la classe de 4e.",
+      "explication": "Le cahier des charges formalise les exigences et contraintes de l'objet.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique »",
       "contexte": "projet",
       "tags": [
@@ -103,7 +103,7 @@
         "Une chaîne d'énergie"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 3, « La gestion de projet technique ») donne comme connaissance le diagramme de planification des tâches, avec durées et contraintes entre tâches.",
+      "explication": "Il représente les tâches, leurs durées et leurs dépendances.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, connaissances : diagramme de planification des tâches",
       "contexte": "projet",
       "tags": [
@@ -125,7 +125,7 @@
         "À fabriquer directement le produit final"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 3) précise le rôle de la revue de projet : suivi, validation, argumentation et explications, en travail collaboratif.",
+      "explication": "Elle permet de suivre, valider et argumenter les choix de l'équipe.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La gestion de projet technique » (4e)",
       "contexte": "projet",
       "tags": [
@@ -147,7 +147,7 @@
         "Supprimer les tests de performance"
       ],
       "answer": 0,
-      "explication": "L'écoconception est une démarche préventive appliquée à tout le cycle de vie de l'objet.",
+      "explication": "L'écoconception réduit l'impact environnemental sur tout le cycle de vie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, connaissances : l'écoconception ; guide mai 2024 §3.3",
       "contexte": "projet",
       "tags": [
@@ -169,7 +169,7 @@
         "La fabrication des constituants"
       ],
       "answer": 3,
-      "explication": "Le programme (thème 2, « Matériaux et procédés ») donne l'ordre : extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
+      "explication": "Les constituants sont fabriqués avant d'être assemblés.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Matériaux et procédés », connaissances",
       "contexte": "materiaux",
       "tags": [
@@ -191,7 +191,7 @@
         "Le débit de la liaison réseau"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1) cite l'indice de réparabilité parmi les critères de choix ; le développe la réparabilité.",
+      "explication": "L'indice de réparabilité compare la facilité de réparation des appareils.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « Le choix d'un OST dans un contexte de développement durable »",
       "contexte": "projet",
       "tags": [
@@ -213,7 +213,7 @@
         "Supprimer les mesures gênantes"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 3, « Valider les solutions techniques ») demande de comparer résultats et exigences, d'identifier les écarts puis de réessayer.",
+      "explication": "Il faut comparer résultats et exigences, proposer une amélioration puis retester.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Valider les solutions techniques par des simulations ou par des protocoles de tests »",
       "contexte": "projet",
       "tags": [
@@ -235,7 +235,7 @@
         "Un schéma bloc"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 3, « Le prototypage de solutions ») attend croquis, schémas, graphiques, algorithmes et modélisation pour proposer une solution.",
+      "explication": "Un croquis ou une modélisation permet d'imaginer la forme avant fabrication.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le prototypage de solutions » (5e)",
       "contexte": "materiaux",
       "tags": [
@@ -257,7 +257,7 @@
         "Pour ne pas documenter le projet"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 3) indique que le travail en équipe est privilégié et que le partage des fonctionnalités est planifié et piloté par l'enseignant.",
+      "explication": "Le travail en équipe répartit les fonctionnalités à coder de façon planifiée.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Concevoir, écrire, tester et mettre au point un programme »",
       "contexte": "terminal",
       "tags": [
@@ -279,7 +279,7 @@
         "La durabilité"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 1) retient qualité, efficacité énergétique, durabilité, recyclabilité, bilan carbone et piliers du développement durable comme critères de choix.",
+      "explication": "L'empreinte carbone et la recyclabilité sont des critères de développement durable.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : critères de choix et piliers du développement durable",
       "contexte": "projet",
       "tags": [
@@ -301,7 +301,7 @@
         "Validation → fabrication → recherche du besoin"
       ],
       "answer": 0,
-      "explication": "La démarche de projet part du besoin, passe par des objectifs intermédiaires et une planification, et se termine par un produit validé par des tests.",
+      "explication": "La démarche suit la séquence besoin, cahier des charges, solutions, prototype, tests, validation.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3 ; guide d'accompagnement mai 2024, démarches pédagogiques",
       "contexte": "projet",
       "tags": [
@@ -323,7 +323,7 @@
         "Interrupteur (lumineuse) → batterie (électrique) → lampe"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) attend l'identification des sources, formes d'énergie et conversions ; la lampe convertit l'énergie électrique en énergie lumineuse et thermique.",
+      "explication": "La batterie fournit l'énergie électrique convertie en lumière et chaleur par la lampe.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Fonctions, solutions, constituants de la chaîne d'énergie »",
       "contexte": "energie",
       "tags": [
@@ -345,7 +345,7 @@
         "Potentielle de position"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) cite la batterie comme constituant de la chaîne d'énergie et demande d'indiquer la nature des énergies en entrée et en sortie.",
+      "explication": "Une batterie délivre de l'énergie électrique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : batterie, relais/interrupteur",
       "contexte": "energie",
       "tags": [
@@ -367,7 +367,7 @@
         "60 W"
       ],
       "answer": 2,
-      "explication": "P = E/t = 600/30 = 20 W. Le programme (thème 1, « La performance des OST », liens avec les mathématiques) demande de calculer avec des grandeurs mesurables dans des unités adaptées.",
+      "explication": "P = E/t = 600/30 = 20 W.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec les mathématiques",
       "contexte": "energie",
       "tags": [
@@ -389,7 +389,7 @@
         "125 %"
       ],
       "answer": 1,
-      "explication": "Rendement = puissance utile / puissance consommée = 200/250 = 0,8, soit 80 %. Le programme et le font de l'efficacité énergétique un critère de choix.",
+      "explication": "Rendement = 200/250 = 0,8, soit 80 %.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
       "contexte": "energie",
       "tags": [
@@ -411,7 +411,7 @@
         "Lumineuse → électrique"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) donne explicitement la conversion du moteur électrique parmi les connaissances de la chaîne d'énergie.",
+      "explication": "Un moteur électrique convertit l'énergie électrique en énergie mécanique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions d'énergie",
       "contexte": "energie",
       "tags": [
@@ -433,7 +433,7 @@
         "Le radiateur"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, connaissances de la chaîne d'énergie) attribue au relais/interrupteur la fonction de commander le passage de l'énergie.",
+      "explication": "Le relais ou l'interrupteur commande l'ouverture et la fermeture du circuit.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : fonctions de la batterie et du relais",
       "contexte": "energie",
       "tags": [
@@ -455,7 +455,7 @@
         "Batterie (cinétique → électrique) → LED"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « Élaborer à l'aide d'un schéma bloc la chaîne d'énergie ») attend ce type de représentation en classe de 3e.",
+      "explication": "Le panneau convertit la lumière en électricité et la LED l'électricité en lumière.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 3e : schéma bloc de la chaîne d'énergie",
       "contexte": "energie",
       "tags": [
@@ -477,7 +477,7 @@
         "L'énergie potentielle de pesanteur"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) cite le vérin parmi les constituants dont il faut connaître la conversion : l'énergie de pression devient énergie mécanique.",
+      "explication": "L'énergie de pression du fluide est convertie en mouvement mécanique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions (vérin)",
       "contexte": "energie",
       "tags": [
@@ -499,7 +499,7 @@
         "Le rayonnement solaire"
       ],
       "answer": 3,
-      "explication": "Le programme introduit le choix critérié d'une source renouvelable ou non renouvelable, attendu au thème 3.",
+      "explication": "Le rayonnement solaire est une source d'énergie renouvelable.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
       "contexte": "energie",
       "tags": [
@@ -521,7 +521,7 @@
         "Un luxmètre"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1, « La performance des OST », liens avec la physique-chimie) demande de choisir les appareils de mesure et d'exploiter les lois de l'électricité.",
+      "explication": "Un voltmètre mesure la tension électrique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec la physique-chimie",
       "contexte": "energie",
       "tags": [
@@ -543,7 +543,7 @@
         "Parce que la puissance utile est plus grande"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) demande d'identifier conversions et transferts : l'énergie se conserve, mais une partie est transférée sous une forme non utile.",
+      "explication": "L'énergie se conserve, mais une partie est convertie en formes non utiles, souvent thermiques.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « sources, formes d'énergie, conversions et transferts »",
       "contexte": "energie",
       "tags": [
@@ -565,7 +565,7 @@
         "La puissance nominale"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 1, « La performance des OST ») donne l'autonomie énergétique comme exemple de grandeur mesurable de performance.",
+      "explication": "L'autonomie est la durée de fonctionnement avant recharge.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : critères de performance",
       "contexte": "projet",
       "tags": [
@@ -587,7 +587,7 @@
         "Stocker le programme"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « Fonctions, solutions, constituants de la chaîne d'information ») définit le capteur (température, présence, distance) comme acquisition de données.",
+      "explication": "Le capteur convertit une grandeur physique en donnée exploitable.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : capteurs et IHM",
       "contexte": "terminal",
       "tags": [
@@ -609,7 +609,7 @@
         "Le vérin"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) cite le microcontrôleur comme constituant central de la chaîne d'information, entre capteurs et actionneurs.",
+      "explication": "Le microcontrôleur traite les données et commande la sortie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : microcontrôleur",
       "contexte": "terminal",
       "tags": [
@@ -631,7 +631,7 @@
         "Un capteur de température"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 2) distingue les entrées (capteurs, IHM) et les sorties du programme, notamment vers un actionneur.",
+      "explication": "Un actionneur est un composant de sortie commandé par la chaîne d'information, comme un moteur.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Algorithmique et programmation » : entrées et sorties",
       "contexte": "terminal",
       "tags": [
@@ -653,7 +653,7 @@
         "Des phrases quelconques"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « Structuration et traitement des données ») donne les types mot, nombre et booléen comme vocabulaire des données.",
+      "explication": "Un booléen prend les valeurs vrai ou faux.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : types de données",
       "contexte": "terminal",
       "tags": [
@@ -675,7 +675,7 @@
         "1024"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 1, « Usages et impacts sociétaux du numérique ») attend la connaissance des unités bit et octet et de leurs multiples.",
+      "explication": "Un octet contient 8 bits.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : unité de quantité d'information",
       "contexte": "terminal",
       "tags": [
@@ -697,7 +697,7 @@
         "L'imprimante"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « La circulation de l'information dans un réseau informatique ») demande d'identifier le rôle du commutateur dans un réseau local.",
+      "explication": "Le commutateur relie les terminaux d'un réseau local.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « La circulation de l'information dans un réseau informatique »",
       "contexte": "terminal",
       "tags": [
@@ -719,7 +719,7 @@
         "À augmenter la mémoire"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) attend que l'élève justifie la nécessité d'identifier les terminaux et connaisse le rôle et la structure d'une adresse IP.",
+      "explication": "L'adresse IP identifie un terminal pour communiquer sur le réseau.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : rôle et structure d'une adresse IP",
       "contexte": "terminal",
       "tags": [
@@ -741,7 +741,7 @@
         "Le capteur de présence"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) donne au routeur et aux tables de routage le rôle de faire communiquer plusieurs réseaux, attendu en classe de 3e.",
+      "explication": "Le routeur relie des réseaux différents grâce à ses tables de routage.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 3e : protocole et tables de routage",
       "contexte": "terminal",
       "tags": [
@@ -763,7 +763,7 @@
         "La température change"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2, « Algorithmique et programmation ») attend la compréhension de l'instruction conditionnelle et la modification des paramètres d'entrée dès la classe de 5e.",
+      "explication": "À 24 °C, la condition est fausse, donc la LED s'éteint.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : instruction conditionnelle",
       "contexte": "terminal",
       "tags": [
@@ -785,7 +785,7 @@
         "Le moteur"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) donne la liste comme structure de données pour stocker, parcourir et traiter des données issues du programme.",
+      "explication": "Une liste stocke et permet de traiter plusieurs mesures.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : structure de données « listes »",
       "contexte": "terminal",
       "tags": [
@@ -807,7 +807,7 @@
         ".jpg"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 1) cite les fichiers texte, image, tableur ou CSV et demande de connaître extension et format de fichiers.",
+      "explication": "Les données tabulées sont souvent stockées en .csv.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : fichiers et arborescence",
       "contexte": "terminal",
       "tags": [
@@ -829,7 +829,7 @@
         "Une unité de débit"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, connaissances de programmation) définit l'événement et le déclenchement d'une séquence d'instructions par un événement.",
+      "explication": "Un événement déclenche une séquence d'instructions.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : événement et séquence d'instructions",
       "contexte": "terminal",
       "tags": [
@@ -851,7 +851,7 @@
         "Une forte conductibilité thermique"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite la conductibilité électrique et thermique comme connaissance sur les matériaux.",
+      "explication": "Un conducteur électrique doit avoir une forte conductibilité électrique.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conductibilités électrique et thermique",
       "contexte": "materiaux",
       "tags": [
@@ -873,7 +873,7 @@
         "L'usinage par enlèvement de matière"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) distingue procédés d'ajout et d'enlèvement de matière et cite l'imprimante 3D parmi les moyens de production.",
+      "explication": "La fabrication additive ajoute la matière couche par couche.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : moyens de production et procédés d'obtention de pièce",
       "contexte": "materiaux",
       "tags": [
@@ -895,7 +895,7 @@
         "La compression uniquement"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite la flexion et la torsion comme modes de sollicitation des matériaux.",
+      "explication": "Une poutre qui fléchit subit une flexion.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : modes de sollicitation",
       "contexte": "materiaux",
       "tags": [
@@ -917,7 +917,7 @@
         "Une forte résistance mécanique"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) attend la connaissance de la conductibilité thermique pour justifier le choix d'un matériau.",
+      "explication": "Une forte conductibilité thermique favorise l'évacuation de la chaleur.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Matériaux et procédés » : caractéristiques et propriétés",
       "contexte": "materiaux",
       "tags": [
@@ -939,7 +939,7 @@
         "Le rivetage définitif"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 2) distingue assemblages fixes et démontables et les relie à la réparabilité (thème 1).",
+      "explication": "Les vis forment un assemblage démontable facilitant la réparation.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : assemblages fixes et démontables",
       "contexte": "materiaux",
       "tags": [
@@ -961,7 +961,7 @@
         "Son empreinte carbone"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 3, « Le choix des matériaux ») et le attendent disponibilité, valorisation, recyclage et empreinte carbone.",
+      "explication": "La disponibilité et la recyclabilité sont des critères environnementaux de choix.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix des matériaux » ; guide mai 2024 §3.3",
       "contexte": "materiaux",
       "tags": [
@@ -983,7 +983,7 @@
         "Du béton"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2, « Matériaux et procédés ») demande de connaître les caractéristiques et propriétés des principaux matériaux pour justifier un choix.",
+      "explication": "Le PMMA est un polymère transparent adapté à une fenêtre.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : caractéristiques des principaux matériaux",
       "contexte": "materiaux",
       "tags": [
@@ -1005,7 +1005,7 @@
         "Le perçage"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») cite le thermoformage et le pliage parmi les procédés de mise en forme.",
+      "explication": "Le thermoformage chauffe une plaque puis lui donne une forme.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : procédés de mise en forme",
       "contexte": "materiaux",
       "tags": [
@@ -1027,7 +1027,7 @@
         "En la comparant au cahier des charges"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 3, « La validation du comportement mécanique d'un matériau ») prévoit un protocole de test fourni en 4e et une simulation fournie en 5e.",
+      "explication": "La tenue mécanique se valide en appliquant un protocole de test fourni.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La validation du comportement mécanique d'un matériau »",
       "contexte": "materiaux",
       "tags": [
@@ -1049,7 +1049,7 @@
         "L'utilisation"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) donne la suite extraction, traitement, fabrication, assemblage, utilisation, fin de vie, transport.",
+      "explication": "Le cycle de vie commence par l'extraction des matières premières.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : étapes du cycle de vie",
       "contexte": "materiaux",
       "tags": [
@@ -1071,7 +1071,7 @@
         "Augmenter l'épaisseur au maximum"
       ],
       "answer": 1,
-      "explication": "Le choix d'un matériau doit être critérié au regard des contraintes techniques et environnementales.",
+      "explication": "Le choix critérié compare les propriétés des matériaux aux contraintes.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix des matériaux » (3e) ; guide mai 2024 §3.3",
       "contexte": "materiaux",
       "tags": [
@@ -1093,7 +1093,7 @@
         "Un carnet de sécurité"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, règles usuelles de sécurité dans l'atelier) attend la mise en œuvre des équipements de protection individuelle.",
+      "explication": "Des lunettes de protection protègent les yeux lors d'une découpe.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : règles usuelles de sécurité en atelier",
       "contexte": "securite",
       "tags": [
@@ -1115,7 +1115,7 @@
         "Un interrupteur"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) cite engrenages, courroies et chaînes comme mécanismes de transmission de mouvements.",
+      "explication": "Un engrenage transmet le mouvement entre roues dentées.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : transmission et transformation de mouvements",
       "contexte": "mecanique",
       "tags": [
@@ -1137,7 +1137,7 @@
         "Un simple pignon"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 2) demande de distinguer transmissions et transformations de mouvements ; la bielle-manivelle transforme la rotation en translation alternative.",
+      "explication": "La bielle-manivelle transforme une rotation en mouvement alternatif.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « mouvements mécaniques : transmissions et transformations »",
       "contexte": "mecanique",
       "tags": [
@@ -1159,7 +1159,7 @@
         "Elle ne tourne pas"
       ],
       "answer": 1,
-      "explication": "Le rapport des nombres de dents donne la réduction de vitesse ; le programme (thème 2) attend l'analyse des transmissions et le lien avec les grandeurs mesurables.",
+      "explication": "La roue entraînée tourne deux fois plus lentement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, transmissions de mouvements ; lien avec les mathématiques",
       "contexte": "mecanique",
       "tags": [
@@ -1181,7 +1181,7 @@
         "En pascals"
       ],
       "answer": 2,
-      "explication": "Le programme (thème 1, « La performance des OST ») donne la vitesse comme grandeur mesurable, à exprimer dans une unité adaptée.",
+      "explication": "La vitesse de rotation s'exprime en tours par minute.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » ; liens avec les mathématiques",
       "contexte": "mecanique",
       "tags": [
@@ -1203,7 +1203,7 @@
         "La conversion électrique"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) demande d'identifier un dysfonctionnement et d'y remédier ; une courroie qui patine ne transmet plus correctement le mouvement.",
+      "explication": "Une courroie qui patine perturbe la transmission de mouvement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
       "contexte": "mecanique",
       "tags": [
@@ -1225,7 +1225,7 @@
         "Supprimer les anciens essais"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2, « Le dépannage et la réparation ») attend détection, analyse, solution, réparation puis test et validation des améliorations.",
+      "explication": "Le dépannage observe, formule une hypothèse, teste, répare puis valide.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Le dépannage et la réparation » (3e)",
       "contexte": "mecanique",
       "tags": [
@@ -1247,7 +1247,7 @@
         "Commander la mise sous tension"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, connaissances de la chaîne d'énergie) donne au relais/interrupteur la fonction de contrôler le circuit.",
+      "explication": "Le relais commande la mise sous tension d'un circuit.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : relais/interrupteur",
       "contexte": "energie",
       "tags": [
@@ -1269,7 +1269,7 @@
         "Supprimer les outils"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 1, indice de réparabilité, et thème 2, assemblages) relie le démontage à la réparation des OST.",
+      "explication": "Un assemblage démontable facilite la maintenance et le remplacement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, indice de réparabilité ; thème 2, assemblages",
       "contexte": "mecanique",
       "tags": [
@@ -1291,7 +1291,7 @@
         "Un simple axe sans pignon"
       ],
       "answer": 0,
-      "explication": "Un réducteur de vitesse augmente le couple ; le programme (thème 2) attend l'analyse des mécanismes de transmission et de transformation de mouvements.",
+      "explication": "Un petit pignon entraînant une grande roue réduit la vitesse et augmente le couple.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, mécanismes de transmission et de transformation",
       "contexte": "mecanique",
       "tags": [
@@ -1313,7 +1313,7 @@
         "Un emballage coloré"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, progressivité 5e) attend le repérage visuel d'une pièce défectueuse puis une réparation suivant un protocole fourni.",
+      "explication": "Une fissure ou une déformation visible révèle une pièce défectueuse.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 5e : repérage visuel d'une pièce défectueuse",
       "contexte": "mecanique",
       "tags": [
@@ -1335,7 +1335,7 @@
         "Transmettre un mouvement"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) classe la chaîne parmi les mécanismes de transmission de mouvements.",
+      "explication": "Une chaîne transmet un mouvement entre deux axes éloignés.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : engrenages, courroies, chaînes",
       "contexte": "mecanique",
       "tags": [
@@ -1357,7 +1357,7 @@
         "Changer le besoin"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2, « détecter, réparer puis tester et valider des améliorations ») fait de ce test une étape obligatoire.",
+      "explication": "Il faut tester le comportement et le comparer à celui attendu.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
       "contexte": "mecanique",
       "tags": [
@@ -1379,7 +1379,7 @@
         "La lampe"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2) cite le vérin dans les conversions d'énergie à connaître : l'énergie de pression devient un mouvement mécanique.",
+      "explication": "Le vérin convertit l'énergie de pression d'un fluide en mouvement.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : conversions (vérin)",
       "contexte": "fluides",
       "tags": [
@@ -1401,7 +1401,7 @@
         "L'énergie sonore"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2) demande d'indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d'énergie.",
+      "explication": "L'énergie fournie en entrée est l'énergie de pression du fluide.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, progressivité 4e : énergies en entrée et sortie",
       "contexte": "fluides",
       "tags": [
@@ -1423,7 +1423,7 @@
         "La température"
       ],
       "answer": 2,
-      "explication": "Le programme donne le débit comme grandeur et, pour la performance des OST, demande de choisir des grandeurs mesurables adaptées.",
+      "explication": "Le débit mesure la quantité de fluide circulant par unité de temps.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, débit et ordres de grandeur ; thème 1, grandeurs mesurables",
       "contexte": "fluides",
       "tags": [
@@ -1445,7 +1445,7 @@
         "Produire de la lumière"
       ],
       "answer": 0,
-      "explication": "Comme l'interrupteur/relais de la chaîne d'énergie, la vanne contrôle le transfert d'énergie : c'est une fonction de constituant attendue au thème 2 du programme.",
+      "explication": "La vanne contrôle le passage du fluide et donc l'énergie transmise.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, fonctions des constituants de la chaîne d'énergie",
       "contexte": "fluides",
       "tags": [
@@ -1467,7 +1467,7 @@
         "Une énergie chimique"
       ],
       "answer": 0,
-      "explication": "L'air comprimé possède une énergie potentielle de pression, que le programme (thème 2) range parmi les formes d'énergie à identifier dans une chaîne.",
+      "explication": "L'air comprimé stocke une énergie potentielle de pression.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : formes d'énergie",
       "contexte": "fluides",
       "tags": [
@@ -1489,7 +1489,7 @@
         "La couleur du moteur"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1, « La performance des OST ») attend le choix d'appareils de mesure et de grandeurs caractérisant une performance.",
+      "explication": "Le débit et la pression caractérisent la performance d'une pompe.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « La performance des OST » (4e)",
       "contexte": "fluides",
       "tags": [
@@ -1511,7 +1511,7 @@
         "1000 W"
       ],
       "answer": 1,
-      "explication": "Rendement = 300/1000 = 0,30. Le programme et le utilisent rendement et efficacité énergétique pour juger une conversion.",
+      "explication": "Rendement = 300/1000 = 0,30, soit 30 %.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Le choix d'une source d'énergie » ; guide mai 2024 §3.3",
       "contexte": "energie",
       "tags": [
@@ -1533,7 +1533,7 @@
         "Un jet haute pression"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2 et thème 3) impose les règles usuelles de sécurité et la prise en compte de la sécurité comme exigence de conception.",
+      "explication": "Un fluide sous pression présente un risque de jet haute pression ou de rupture de flexible.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, règles usuelles de sécurité ; thème 3, exigences",
       "contexte": "securite",
       "tags": [
@@ -1555,7 +1555,7 @@
         "En peignant le vérin"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 3, « Valider les solutions techniques par des simulations ou des protocoles de tests ») prévoit explicitement cette démarche.",
+      "explication": "La course se valide par une simulation puis un test comparé au cahier des charges.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « Valider les solutions techniques par des simulations ou des protocoles de tests »",
       "contexte": "fluides",
       "tags": [
@@ -1577,7 +1577,7 @@
         "La LED s'allume"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, identifier un dysfonctionnement et y remédier) attend le lien entre perte d'énergie et baisse de performance.",
+      "explication": "Une fuite fait baisser la pression et la force du vérin.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, « Identifier un dysfonctionnement et y remédier »",
       "contexte": "fluides",
       "tags": [
@@ -1599,7 +1599,7 @@
         "En bit"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 3, « Les instruments de mesure » ; thème 1, grandeurs mesurables) attend l'usage d'unités adaptées aux grandeurs mesurées.",
+      "explication": "La pression se mesure en pascal ou en bar.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 3, « La modélisation et la fabrication », connaissances : instruments de mesure",
       "contexte": "fluides",
       "tags": [
@@ -1621,7 +1621,7 @@
         "Parce qu'il rend le programme plus long"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1) fait des incidences environnementales et du cycle de vie des critères de choix ; le souligne l'écoconception.",
+      "explication": "Les rejets et le cycle de vie d'un fluide ont des incidences environnementales.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, impacts environnementaux ; guide mai 2024 §3.3",
       "contexte": "fluides",
       "tags": [
@@ -1643,7 +1643,7 @@
         "Retirer ses lunettes"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 2, règles usuelles de sécurité en atelier) attend les équipements de protection individuelle et la mise en œuvre sûre des moyens de réalisation.",
+      "explication": "Il faut porter des lunettes de protection et vérifier les consignes.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2, connaissances : règles usuelles de sécurité et EPI",
       "contexte": "securite",
       "tags": [
@@ -1665,7 +1665,7 @@
         "Le nom de l'école"
       ],
       "answer": 1,
-      "explication": "Le programme recommande de concevoir un mot de passe fort et de gérer ses multiples mots de passe.",
+      "explication": "Un mot de passe sûr est long, unique et varié.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, cybersécurité ; BO n°9 du 29/02/2024, thème 1",
       "contexte": "terminal",
       "tags": [
@@ -1687,7 +1687,7 @@
         "Cliquer sur le lien sans le lire"
       ],
       "answer": 1,
-      "explication": "Le programme demande de reconnaître le phishing et de protéger son identité.",
+      "explication": "Il faut vérifier l'expéditeur et ne jamais communiquer ses identifiants.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, phishing et usurpation ; BO n°9 du 29/02/2024, thème 1",
       "contexte": "terminal",
       "tags": [
@@ -1709,7 +1709,7 @@
         "Le nombre de ports USB"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1, « Usages et impacts sociétaux du numérique ») cite les témoins de connexion et la géolocalisation comme traces numériques.",
+      "explication": "La géolocalisation peut révéler les déplacements d'un utilisateur.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : traces numériques",
       "contexte": "securite",
       "tags": [
@@ -1731,7 +1731,7 @@
         "Ne jamais sauvegarder"
       ],
       "answer": 1,
-      "explication": "Le programme liste les sauvegardes parmi les bonnes pratiques à enseigner.",
+      "explication": "Une sauvegarde régulière sur un support distinct protège les données.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, bonnes pratiques de cybersécurité",
       "contexte": "securite",
       "tags": [
@@ -1753,7 +1753,7 @@
         "Copier une image"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 1) attend le respect de la propriété intellectuelle et des règles d'usage raisonné du numérique.",
+      "explication": "Il faut respecter les licences et citer les sources.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « Usages et impacts sociétaux du numérique »",
       "contexte": "securite",
       "tags": [
@@ -1775,7 +1775,7 @@
         "Une batterie déchargée"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1, cyberviolence) cite l'usurpation d'identité ; le demande de la repérer.",
+      "explication": "Des messages envoyés sans votre accord indiquent une usurpation d'identité.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : cyberviolence et usurpation d'identité",
       "contexte": "securite",
       "tags": [
@@ -1797,7 +1797,7 @@
         "L'authentification vérifie"
       ],
       "answer": 0,
-      "explication": "Le programme (thème 1, connaissances de cybersécurité) associe identification et authentification à la protection des données personnelles.",
+      "explication": "L'identification déclare une identité, l'authentification la vérifie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, connaissances : identification et authentification",
       "contexte": "terminal",
       "tags": [
@@ -1819,7 +1819,7 @@
         "L'ouvrir immédiatement"
       ],
       "answer": 1,
-      "explication": "Le programme recommande de sécuriser sa messagerie et de reconnaître les courriels indésirables.",
+      "explication": "Il ne faut pas ouvrir un fichier inattendu et vérifier la source.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, messagerie et courriels indésirables",
       "contexte": "securite",
       "tags": [
@@ -1841,7 +1841,7 @@
         "Des boutons petits"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 1, « L'OST dans son environnement ») attend l'ergonomie liée à l'usage et les composants d'interface humain-machine (thème 2).",
+      "explication": "Des boutons lisibles, accessibles et cohérents améliorent l'ergonomie.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 1, « L'OST dans son environnement » ; thème 2, IHM",
       "contexte": "securite",
       "tags": [
@@ -1863,7 +1863,7 @@
         "Continuer à manipuler"
       ],
       "answer": 1,
-      "explication": "Le programme (thème 2 et thème 3) impose les règles usuelles de sécurité et la culture de prévention ; le insiste sur la sécurité des personnes.",
+      "explication": "Il faut arrêter l'activité, prévenir et évacuer selon la consigne.",
       "bo_ref": "BO n°9 du 29/02/2024 — Thème 2 et thème 3, règles usuelles de sécurité ; guide mai 2024 §7",
       "contexte": "securite",
       "tags": [
@@ -1885,7 +1885,7 @@
         "Réduire sa taille"
       ],
       "answer": 1,
-      "explication": "Le programme cite le chiffrement des fichiers comme bonne pratique de cybersécurité.",
+      "explication": "Le chiffrement protège la confidentialité des données.",
       "bo_ref": "Guide d'accompagnement mai 2024 — §7.2, chiffrement ; BO n°9 du 29/02/2024, thème 1",
       "contexte": "terminal",
       "tags": [
