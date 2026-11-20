@@ -241,7 +241,7 @@ func material(name: String) -> StandardMaterial3D:
 	var m := StandardMaterial3D.new()
 	match name:
 		"asphalt":
-			_pbr(m, "asphalt", Color(0.48, 0.52, 0.58), 0.12, 1.0, Vector2(7, 7))
+			_pbr(m, "asphalt", Color(0.62, 0.65, 0.70), 0.12, 1.0, Vector2(7, 7))
 		"concrete":
 			_pbr(m, "concrete", Color(0.72, 0.75, 0.8), 0.02, 1.0, Vector2(4, 4))
 		"metal":
@@ -255,15 +255,15 @@ func material(name: String) -> StandardMaterial3D:
 			m.metallic = 1.0
 			m.roughness = 0.16
 		"dark_metal":
-			m.albedo_color = Color(0.075, 0.09, 0.12)
+			m.albedo_color = Color(0.28, 0.32, 0.38)
 			m.metallic = 0.85
 			m.roughness = 0.42
 		"plastic":
-			m.albedo_color = Color(0.045, 0.05, 0.06)
+			m.albedo_color = Color(0.22, 0.24, 0.28)
 			m.metallic = 0.05
 			m.roughness = 0.65
 		"glass":
-			m.albedo_color = Color(0.06, 0.16, 0.22, 0.45)
+			m.albedo_color = Color(0.18, 0.30, 0.40, 0.55)
 			m.metallic = 0.1
 			m.roughness = 0.08
 			m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
