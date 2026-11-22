@@ -417,10 +417,10 @@ func add_vent(start: Vector3, end: Vector3, width: float = 1.4) -> void:
 	var length := start.distance_to(end)
 	var yaw := atan2(end.x - start.x, end.z - start.z)
 	# Plancher, plafond bas et parois : le joueur doit se baisser (Ctrl).
-	box("vent_floor", mid + Vector3(0, 0.02, 0), Vector3(width, 0.15, length), "metal", true, Vector3(0, yaw, 0))
-	box("vent_roof", mid + Vector3(0, 1.18, 0), Vector3(width, 0.16, length), "metal", true, Vector3(0, yaw, 0))
-	box("vent_left", mid + Vector3(-width * 0.5, 0.6, 0), Vector3(0.14, 1.1, length), "rust", true, Vector3(0, yaw, 0))
-	box("vent_right", mid + Vector3(width * 0.5, 0.6, 0), Vector3(0.14, 1.1, length), "rust", true, Vector3(0, yaw, 0))
+	box("vent_floor", mid + Vector3(0, -0.08, 0), Vector3(width, 0.15, length), "metal", true, Vector3(0, yaw, 0))
+	box("vent_roof", mid + Vector3(0, 1.25, 0), Vector3(width, 0.16, length), "metal", true, Vector3(0, yaw, 0))
+	box("vent_left", mid + Vector3(-width * 0.5, 0.65, 0), Vector3(0.14, 1.2, length), "rust", true, Vector3(0, yaw, 0))
+	box("vent_right", mid + Vector3(width * 0.5, 0.65, 0), Vector3(0.14, 1.2, length), "rust", true, Vector3(0, yaw, 0))
 	var grate := prop("VentGrate", start, yaw, 1.0, Vector3(width, 1.2, 0.1))
 
 

@@ -526,7 +526,7 @@ func _close_quiz() -> void:
 # ------------------------------------------------------------------ CODEX
 func _build_codex() -> void:
 	codex_panel = _panel(root, "Codex", 0, 0, 0, 0, true, Color(0.01, 0.02, 0.04, 0.97))
-	_label(codex_panel, "CLASSEUR TECHNOLOGIQUE — BO CYCLE 4", 0, 45, 1600, 60, 40,
+	_label(codex_panel, "CLASSEUR TECHNOLOGIQUE", 200, 45, 1200, 60, 40,
 		Color(0.25, 0.9, 1.0), HORIZONTAL_ALIGNMENT_CENTER, true)
 	var scroll := ScrollContainer.new()
 	scroll.set_anchors_preset(Control.PRESET_TOP_LEFT)
@@ -539,7 +539,7 @@ func _build_codex() -> void:
 	codex_container.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(codex_container)
 	_button(codex_panel, "FERMER [TAB]", 660, 810, 280, 54, Callable(self, "toggle_codex"))
-	_button(codex_panel, "QUITTER [ESC]", 1280, 40, 260, 44, Callable(self, "toggle_codex"))
+	_button(codex_panel, "QUITTER [ESC]", 20, 40, 220, 44, Callable(self, "toggle_codex"))
 	codex_panel.visible = false
 
 
