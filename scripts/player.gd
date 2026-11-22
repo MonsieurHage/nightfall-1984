@@ -62,7 +62,7 @@ func _ready() -> void:
 	camera.position.y = _base_eye
 	camera.fov = 78.0
 	camera.near = 0.05
-	camera.far = 300.0
+	camera.far = 120.0
 	camera.current = true
 	add_child(camera)
 
@@ -322,6 +322,16 @@ func _physics_process(delta: float) -> void:
 		camera.position.x = lerpf(camera.position.x, 0.0, 8.0 * delta)
 
 	move_and_slide()
+
+	# Réapparition si chute dans le vide (évite le redémarrage brutal de la mission)
+	if global_position.y < -6.0 and Game.current_level != null:
+		velocity = Vector3.ZERO
+		teleport(Game.current_level.spawn, Game.current_level.spawn_yaw)
+		health = maxf(1.0, health - 10.0)
+		Game.health_changed.emit(health, max_health)
+		if Game.ui:
+			Game.ui.damage_flash()
+		Game.notify("CHUTE DÉTECTÉE — RÉAPPARITION", 2.0)
 
 	cooldown = maxf(0.0, cooldown - delta)
 	if reloading > 0.0:

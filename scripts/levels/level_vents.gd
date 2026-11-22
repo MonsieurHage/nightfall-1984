@@ -13,9 +13,18 @@ func build() -> void:
 	for x in [-9, 9]:
 		box("access_wall", Vector3(x, 1.7, 10), Vector3(0.4, 3.4, 14), "concrete")
 	box("access_end", Vector3(0, 1.7, 17), Vector3(18, 3.4, 0.4), "concrete")
-	prop("VentGrate", Vector3(0, 0.9, 5.6), 0.0, 1.6, Vector3(1.8, 1.4, 0.2), "metal")
+	var grate_door := add_door(Vector3(0, 0.9, 5.6), 0.0, "", Vector3(1.8, 1.4, 0.2))
+	grate_door.scale = Vector3(1.6, 1.6, 1.6)
+	var grate_mesh := _prop_mesh("VentGrate")
+	for c in grate_door.get_children():
+		if c is MeshInstance3D and c.mesh is BoxMesh:
+			(c as MeshInstance3D).mesh = grate_mesh
+			(c as MeshInstance3D).material_override = Game.material("metal")
+		elif c is MeshInstance3D:
+			c.visible = false
 	spawn_pickup("shrink", Vector3(-5.5, 0.8, 11), "ShrinkRay")
-	add_terminal(Vector3(6.4, 0.9, 12), -PI * 0.5, "information", ["information"], "quiz", "BORNE RÉSEAU")
+	var net_terminal := add_terminal(Vector3(6.4, 0.9, 12), -PI * 0.5, "information", ["information"], "quiz", "BORNE RÉSEAU")
+	net_terminal.linked_door = grate_door
 
 	# Conduit bas : 12 m à parcourir accroupi
 	add_vent(Vector3(0, 0, 5.5), Vector3(0, 0, -7.5), 1.7)
