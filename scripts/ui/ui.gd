@@ -40,6 +40,7 @@ var codex_container: VBoxContainer
 var result_text: Label
 var teacher_text: Label
 var current_question: Dictionary = {}
+var _pause_before_codex: bool = false
 var notif_timer: float = 0.0
 var font_main: Font
 var font_title: Font
@@ -538,15 +539,24 @@ func _build_codex() -> void:
 	codex_container.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(codex_container)
 	_button(codex_panel, "FERMER [TAB]", 660, 810, 280, 54, Callable(self, "toggle_codex"))
+	_button(codex_panel, "QUITTER [ESC]", 1280, 40, 260, 44, Callable(self, "toggle_codex"))
 	codex_panel.visible = false
 
 
 func toggle_codex() -> void:
 	if codex_panel.visible:
 		codex_panel.visible = false
+		if _pause_before_codex:
+			pause_panel.visible = true
+			_pause_before_codex = false
 		if Game.current_mission != "" and not input_blocked():
 			Game.main.capture_mouse()
 		return
+	_pause_before_codex = pause_panel.visible
+	if _pause_before_codex:
+		pause_panel.visible = false
+	for c in codex_container.get_children():
+		c.queue_free()
 	for c in codex_container.get_children():
 		c.queue_free()
 	var by_theme: Dictionary = {}
@@ -571,6 +581,7 @@ func toggle_codex() -> void:
 		var l := _label(codex_container, "Aucune fiche débloquée. Ramassez des fragments mémoire et répondez correctement aux bornes.",
 			0, 0, 1180, 80, 22, Color(0.7, 0.8, 0.9))
 		l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	codex_panel.move_to_front()
 	codex_panel.visible = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
