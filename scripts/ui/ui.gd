@@ -16,6 +16,11 @@ var mission_panel: Control
 var quiz_panel: Control
 var codex_panel: Control
 var pause_panel: Control
+var audio_panel: Control
+var audio_button: Button
+var master_slider: HSlider
+var music_slider: HSlider
+var sfx_slider: HSlider
 var result_panel: Control
 var death_panel: Control
 var teacher_panel: Control
@@ -74,6 +79,7 @@ func _ready() -> void:
 	_build_results()
 	_build_death()
 	_build_teacher()
+	_build_audio_panel()
 
 	fade_rect = ColorRect.new()
 	fade_rect.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -237,6 +243,7 @@ func _build_hud() -> void:
 	health_fill.color = Color(0.1, 0.85, 0.75)
 	hud.add_child(health_fill)
 	health_text = _label(hud, "INTÉGRITÉ 100", 20, 790, 300, 30, 17, Color(0.6, 1.0, 0.9))
+	audio_button = _button(hud, "⚙", 1540, 18, 48, 48, Callable(self, "toggle_audio_panel"), Color(0.2, 0.7, 0.9, 0.9))
 
 	weapon_label = _label(hud, "Pistolet M9", 1120, 770, 460, 34,
 		20, Color(0.4, 0.9, 1.0), HORIZONTAL_ALIGNMENT_RIGHT)
@@ -521,6 +528,81 @@ func _close_quiz() -> void:
 	current_question = {}
 	if Game.current_mission != "" and not input_blocked():
 		Game.main.capture_mouse()
+
+
+# ------------------------------------------------------------------ AUDIO
+func _build_audio_panel() -> void:
+	audio_panel = _panel(root, "Audio", 580, 260, 440, 360, false, Color(0.01, 0.02, 0.04, 0.97))
+	_label(audio_panel, "RÉGLAGES AUDIO", 0, 20, 440, 40, 26, Color(0.25, 0.9, 1.0), HORIZONTAL_ALIGNMENT_CENTER, true)
+	_label(audio_panel, "MASTER", 40, 90, 120, 30, 18, Color.WHITE)
+	master_slider = HSlider.new()
+	master_slider.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	master_slider.offset_left = 170
+	master_slider.offset_top = 90
+	master_slider.offset_right = 400
+	master_slider.offset_bottom = 120
+	master_slider.min_value = 0.0
+	master_slider.max_value = 1.0
+	master_slider.step = 0.01
+	master_slider.value = float(Game.settings.get("master", 0.9))
+	master_slider.value_changed.connect(_on_master_changed)
+	audio_panel.add_child(master_slider)
+	_label(audio_panel, "MUSIQUE", 40, 150, 120, 30, 18, Color.WHITE)
+	music_slider = HSlider.new()
+	music_slider.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	music_slider.offset_left = 170
+	music_slider.offset_top = 150
+	music_slider.offset_right = 400
+	music_slider.offset_bottom = 180
+	music_slider.min_value = 0.0
+	music_slider.max_value = 1.0
+	music_slider.step = 0.01
+	music_slider.value = float(Game.settings.get("music", 0.55))
+	music_slider.value_changed.connect(_on_music_changed)
+	audio_panel.add_child(music_slider)
+	_label(audio_panel, "EFFETS", 40, 210, 120, 30, 18, Color.WHITE)
+	sfx_slider = HSlider.new()
+	sfx_slider.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	sfx_slider.offset_left = 170
+	sfx_slider.offset_top = 210
+	sfx_slider.offset_right = 400
+	sfx_slider.offset_bottom = 240
+	sfx_slider.min_value = 0.0
+	sfx_slider.max_value = 1.0
+	sfx_slider.step = 0.01
+	sfx_slider.value = float(Game.settings.get("sfx", 0.9))
+	sfx_slider.value_changed.connect(_on_sfx_changed)
+	audio_panel.add_child(sfx_slider)
+	_button(audio_panel, "FERMER", 140, 290, 160, 40, Callable(self, "toggle_audio_panel"))
+	audio_panel.visible = false
+
+
+func toggle_audio_panel() -> void:
+	audio_panel.visible = not audio_panel.visible
+	if audio_panel.visible:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		audio_panel.move_to_front()
+	else:
+		if Game.current_mission != "" and not input_blocked():
+			Game.main.capture_mouse()
+
+
+func _on_master_changed(v: float) -> void:
+	Game.settings["master"] = v
+	Game.settings_changed.emit()
+	Audio.apply_settings()
+
+
+func _on_music_changed(v: float) -> void:
+	Game.settings["music"] = v
+	Game.settings_changed.emit()
+	Audio.apply_settings()
+
+
+func _on_sfx_changed(v: float) -> void:
+	Game.settings["sfx"] = v
+	Game.settings_changed.emit()
+	Audio.apply_settings()
 
 
 # ------------------------------------------------------------------ CODEX

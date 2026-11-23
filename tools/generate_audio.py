@@ -252,6 +252,10 @@ MUSIC = {
                        chords=[(53, 56, 60), (49, 53, 56), (56, 60, 63), (51, 55, 58)],
                        arp="square", bass_wave="saw", cutoff=3200, air=0.025,
                        drums="boss", arp_div=1, lead=0.15),
+    "music_terminator": dict(bpm=124, bars=48, seed=1984,
+                             chords=[(57, 60, 64), (55, 59, 62), (53, 57, 60), (52, 55, 59)],
+                             arp="saw", bass_wave="fatsaw", cutoff=1800, air=0.035,
+                             drums="metal", arp_div=1, lead=0.14),
 }
 
 

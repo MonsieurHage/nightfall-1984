@@ -136,7 +136,7 @@ func start_mission(id: String, resume: Dictionary = {}) -> void:
 		player.restore_state(resume)
 	Game.health_changed.emit(player.health, player.max_health)
 	Missions.start(id)
-	Audio.play_music("boss" if id == "core" else id)
+	Audio.play_music("terminator" if id == "core" else id)
 	ui.show_hud()
 	ui.set_objectives(Missions.objective_text())
 	capture_mouse()
